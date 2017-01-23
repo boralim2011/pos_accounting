@@ -1,0 +1,145 @@
+
+/* set alignment for element */
+.align-left { text-align: left !important; }
+.align-center { text-align: center !important; }
+.align-right { text-align: right !important; }
+.v-align-middle { vertical-align: middle !important; }
+.v-align-top { vertical-align: top !important; }
+.v-align-bottom { vertical-align: bottom !important; }
+
+/* set color for element */
+.white { color: #ffffff !important; }
+.black { color: #000000 !important; }
+.blue { color: darkblue !important; }
+.purple { color: purple !important; }
+.red { color: #ff0000 !important;}
+
+.bg-white { background-color: #ffffff !important; }
+.bg-black { background-color: #000000 !important; }
+.bg-blue { background-color: darkblue !important; }
+.bg-purple-dark { background-color: purple !important; }
+
+.no-margin-height { min-height: 0 !important; }
+
+.small-box h4 { min-height: 50px; }
+
+.h-padding-5 { padding: 0 5px; }
+.h-padding-10 { padding: 0 10px; }
+.h-padding-15 { padding: 0 15px; }
+.v-padding-5 { padding: 5px 0; }
+.v-padding-10 { padding: 10px 0; }
+.v-padding-15 { padding: 15px 0; }
+
+.inline-button { margin: 0; padding : 0 5px; }
+
+
+.progress-description a { color: #e0e0e0; }
+.progress-description a:hover, .progress-description a:active { color: white; }
+
+
+.notifications-menu.language-menu .dropdown-menu { width: 140px; min-width: 140px; height: 84px;}
+.language-menu img{height: 18px; margin: 0 5px 0 0;}
+
+
+/*********
+    Customize modal style center screen
+ *********/
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px)
+{
+    .modal-dialog{
+        width:98% !important;
+        margin: auto !important;
+    }
+}
+
+.bg-title{background: #f6fafe;}
+
+/*********
+    End customize
+ *********/
+
+/*********
+    Override font
+ *********/
+.font-khmer{ font-size: 90%;}
+@media screen and (max-width: 768px){
+    *{ font-size: 98% !important; }
+}
+
+
+/**********
+    Toast message
+ **********/
+.toast-bottom-right .toast,
+.toast-bottom-center .toast,
+.toast-bottom-left .toast,
+.toast-top-right .toast,
+.toast-top-center .toast,
+.toast-top-left .toast  {
+    width: 100% !important;
+}
+@media screen and (min-width: 768px)
+{
+    .toast-bottom-right,
+    .toast-bottom-center,
+    .toast-bottom-left{
+        width: 50% !important;
+        margin: auto !important;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .toast-bottom-right,
+    .toast-bottom-center,
+    .toast-bottom-left{
+        width: 96% !important;
+        margin: auto !important;
+    }
+}
+/**********
+    End Toast message
+ **********/
+
+@media screen and (max-width: 768px)
+{
+    .btn-group-vertical.small-inline{ display: block; margin: auto; width: 136px;}
+    .btn-group-vertical.small-inline .btn {
+        float: left;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        margin: 0;
+    }
+}
+
+
+/****** Report ******/
+.report th, .report td{ padding: 2px !important; }
+.report th { vertical-align : middle !important; text-align : center; }
+/*.report td { line-height : 14px !important; }*/
+
+@media print {
+    .date-col {width: 65px;}
+}
+@media screen {
+    .date-col {width: 95px;}
+}
