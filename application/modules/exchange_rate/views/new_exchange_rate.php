@@ -13,32 +13,54 @@
 
                     <input type="hidden" id="exchange_rate_id" name="exchange_rate_id" value="0"/>
 
-                    <div class="form-group">
-                        <label >Parent</label>
-                        <select id="parent_id" name="parent_id" class="form-control select2" data-placeholder="Parent"  style="width: 100%; display: none;">
-                            <option value="1" <?php echo isset($parent_id) && $parent_id=="1" ? 'selected="selected"':'';?> >Product</option>
-                            <option value="2" <?php echo isset($parent_id) && $parent_id=="2" ? 'selected="selected"':'';?> >Service</option>
-                            <option value="3" <?php echo isset($parent_id) && $parent_id=="3" ? 'selected="selected"':'';?> >Set</option>
-                        </select>
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+                            <label >From Currency</label>
+                            <select id="from_currency_id" name="from_currency_id" class="form-control select2" data-placeholder="From Currency"  style="width: 100%; display: none;">
+                                <?php
+                                    if(isset($from_currencies) && is_array($from_currencies)) {
+                                        foreach($from_currencies as $fc){
+                                ?>
+                                    <option value="<?php echo $fc->currency_id;?>" ><?php echo $fc->currency_name; ?></option>
+                                <?php   }
+                                    }?>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+                            <label >To Currency</label>
+                            <select id="to_currency_id" name="to_currency_id" class="form-control select2" data-placeholder="To Currency"  style="width: 100%; display: none;">
+                                <?php
+                                if(isset($to_currencies) && is_array($to_currencies)) {
+                                    foreach($to_currencies as $tc){
+                                        ?>
+                                        <option value="<?php echo $tc->currency_id;?>" ><?php echo $tc->currency_name; ?></option>
+                                    <?php } }?>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exchange_rate_name">Exchange_rate Name</label>
-                        <input type="text" class="form-control" id="exchange_rate_name" name="exchange_rate_name" placeholder="Enter Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exchange_rate_name">Exchange_rate Name KH</label>
-                        <input type="text" class="form-control" id="exchange_rate_name_kh" name="exchange_rate_name_kh" placeholder="Enter Name KH">
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+                            <label for="bit_rate">Bit</label>
+                            <input type="text" class="form-control" id="bit_rate" name="bit_rate" placeholder="Bit Rate" >
+                        </div>
+                        <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+                            <label for="ask_rate">Ask</label>
+                            <input type="text" class="form-control" id="ask_rate" name="ask_rate" placeholder="Ask Rate" >
+                        </div>
                     </div>
                     <div class="form-group">
                         <!--<label for="manage_stock">&nbsp;</label>-->
                         <div>
-                            <label><input type="checkbox" class="minimal form-control" id="manage_stock" name="manage_stock" > Manage Stock</label>
+                            <label><input type="checkbox" class="minimal form-control" id="is_inverse" name="is_inverse" > Inverse</label>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exchange_rate_name">Display</label>
+                        <input type="text" class="form-control" id="rate_display" name="rate_display" readonly="readonly">
                     </div>
 
                     <div class="clearfix"></div>
                 </form>
-
             </div>
             <div class="modal-footer">
                 <div class="form-group no-margin">
@@ -62,7 +84,8 @@
             radioClass: 'iradio_minimal-blue'
         });
 
-        $("#parent_id").select2();
+        $("#from_currency_id").select2();
+        $("#to_currency_id").select2();
 
         //add exchange_rate
         $(document).off("click","#btn-new-exchange_rate");
@@ -100,6 +123,7 @@
             formData.append('submit', 1);
             // Main magic with files here
             //formData.append('file', $('input[type=file]')[0].files[0]);
+
 
             $.ajax({
                 url: url,

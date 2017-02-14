@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-top: 3px;">
                             <div class="row">
-                                <div class="form-group ccol-lg-6 col-sm-6 col-xs-12">
+                                <div class="form-group col-lg-6 col-sm-6 col-xs-12">
                                     <select id="search_by" name="search_by" class="form-control select2" data-placeholder="Search By"  style="width: 100%;">
                                         <option value="from_currency_name" <?php echo isset($search_by) && $search_by=="from_currency_name" ? 'selected="selected"':'';?> >From Currency Name</option>
                                         <option value="to_currency_name" <?php echo isset($search_by) && $search_by=="to_currency_name" ? 'selected="selected"':'';?> >To Currency Name</option>
@@ -235,6 +235,20 @@
 
 <script type="text/javascript">
 
+    function display_rate()
+    {
+        var from = $("#from_currency_id option:selected").text();
+        var to = $("#to_currency_id option:selected").text();
+
+        var display = $("#is_inverse").is(':checked') ? to + '/' + from : from + '/' + to;
+
+        var bit_rate = $("#bit_rate").val();
+        var ask_rate = $("#ask_rate").val();
+        display += ' : ' + bit_rate + " - " + ask_rate;
+
+        $("#rate_display").val(display);
+    }
+
     $(document).ready(function(){
 
         //view exchange_rate
@@ -247,10 +261,13 @@
 
             var model = JSON.parse($(this).attr('data-json'));
             $("#exchange_rate_id").val(model.exchange_rate_id);
-            $("#exchange_rate_name").val(model.exchange_rate_name);
-            $("#exchange_rate_name_kh").val(model.exchange_rate_name_kh);
-            $("#manage_stock").iCheck(model.manage_stock==1?'check':'uncheck');
-            $('#parent_id').select2("val", model.parent_id);
+            $("#bit_rate").val(model.bit_rate);
+            $("#ask_rate").val(model.ask_rate);
+            $("#is_inverse").iCheck(model.is_inverse==1?'check':'uncheck');
+            $('#from_currency_id').select2("val", model.from_currency_id);
+            $('#to_currency_id').select2("val", model.to_currency_id);
+
+            display_rate();
 
             $("#btn-add-exchange_rate").remove();
 
@@ -269,15 +286,24 @@
 
             var model = JSON.parse($(this).attr('data-json'));
             $("#exchange_rate_id").val(model.exchange_rate_id);
-            $("#exchange_rate_name").val(model.exchange_rate_name);
-            $("#exchange_rate_name_kh").val(model.exchange_rate_name_kh);
-            $("#manage_stock").iCheck(model.manage_stock==1?'check':'uncheck');
-            $('#parent_id').select2("val", model.parent_id);
+            $("#bit_rate").val(model.bit_rate);
+            $("#ask_rate").val(model.ask_rate);
+            $("#is_inverse").iCheck(model.is_inverse==1?'check':'uncheck');
+            $('#from_currency_id').select2("val", model.from_currency_id);
+            $('#to_currency_id').select2("val", model.to_currency_id);
+
+            display_rate();
 
             $("#dialog-exchange_rate").modal({
                 backdrop: "static" // true | false | "static" => default is true
             });
         });
+
+        $("#is_inverse").on("ifChanged", function(){ display_rate(); });
+        $("#from_currency_id").change(function(){ display_rate(); });
+        $("#to_currency_id").change(function(){ display_rate(); });
+        $("#bit_rate").blur(function(){ display_rate(); });
+        $("#ask_rate").blur(function(){ display_rate(); });
 
         //delete exchange_rate
         $(document).off("click",".btn-delete");
@@ -343,7 +369,9 @@
     });
 </script>
 
+<?php
+    //$data['from_currencies'] = $from_currencies;
+    //$data['to_currencies'] = $to_currencies;
 
-
-
-<?php $this->load->view('exchange_rate/new_exchange_rate'); ?>
+    //$this->load->view('exchange_rate/new_exchange_rate', $data);
+?>

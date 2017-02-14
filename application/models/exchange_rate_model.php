@@ -66,7 +66,7 @@ class Exchange_rate_model extends Model_base
 
     function get(Exchange_rate_model $model)
     {
-        $sql="select ex.*, fc.currency_name from_currency_name, tc.currency_name to_currency_name, ".
+        $sql="select ex.*, fc.currency_name from_currency_name, tc.currency_name to_currency_name ".
             "from exchange_rate ex ".
             "join currency fc on fc.currency_id=ex.from_currency_id ".
             "join currency tc on tc.currency_id=ex.to_currency_id ".
@@ -101,7 +101,7 @@ class Exchange_rate_model extends Model_base
             "or (from_currency_id=$exchange_rate->to_currency_id and to_currency_id=$exchange_rate->from_currency_id)) ".
             "and exchange_rate_id!=$exchange_rate->exchange_rate_id"
         ;
-        $result =$this->db->query($sql);
+        $result = $this->db->query($sql);
 
         return $result && $result->num_rows()> 0;
     }
@@ -112,6 +112,7 @@ class Exchange_rate_model extends Model_base
         {
             return Message_result::error_message('From and To currency cannot be the same');
         }
+
         if($this->is_exist_rate($model))
         {
             return Message_result::error_message('Exchange_rate is exist');
@@ -147,6 +148,10 @@ class Exchange_rate_model extends Model_base
 
         $result = $this->get($model);
         if(!$result->success || $result->model->is_editable==0) return Message_result::error_message('Exchange_rate cannot be edited');
+
+        // $ms = '';
+        // foreach($model as $key=>$val) $ms .= "$key=>$val<br>\n";
+        // return Message_result::error_message($ms);
 
         $this->db->where('exchange_rate_id', $model->exchange_rate_id);
 

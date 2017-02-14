@@ -58,7 +58,7 @@ class Exchange_rate extends My_Controller {
         if($result->success) $data['to_currencies'] = $result->models;
 
         $this->load->view('exchange_rate/manage_exchange_rate', $data);
-
+        $this->load->view('exchange_rate/new_exchange_rate', $data);
     }
 
     function edit()
