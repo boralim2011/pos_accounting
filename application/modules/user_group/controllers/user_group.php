@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class User_group extends My_Controller {
+class User_group extends MY_Controller {
 
     function __construct()
     {

@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 
-class Location extends My_Controller {
+class Location extends MY_Controller {
 
     function __construct()
     {

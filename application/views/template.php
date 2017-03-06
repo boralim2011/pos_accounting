@@ -247,18 +247,19 @@ desired effect
                     </a>
                     <ul class="treeview-menu">
                         <!-- Company -->
-                        <li><a href="#company"><i class="fa fa fa-bank"></i> <span>Company</span></a></li>
+                        <li><a href="#company"><i class="fa fa-bank"></i> <span>Company</span></a></li>
 
-                        <li><a href="#currency"><i class="fa fa fa-bank"></i> <span>Curency</span></a></li>
-                        <li><a href="#exchange_rate"><i class="fa fa fa-bank"></i> <span>Exchange Rate</span></a></li>
+                        <li><a href="#currency"><i class="fa fa-dollar"></i> <span>Curency</span></a></li>
+                        <li><a href="#exchange_rate"><i class="fa fa-money"></i> <span>Exchange Rate</span></a></li>
 
                         <!-- Item master -->
-                        <li><a href="#unit"><i class="fa fa-map-marker"></i> <span>Unit</span></a></li>
-                        <li><a href="#maker"><i class="fa fa-map-marker"></i> <span>Maker</span></a></li>
-                        <li><a href="#item_type"><i class="fa fa-map-marker"></i> <span>Item Type</span></a></li>
-                        <li><a href="#item_group"><i class="fa fa-map-marker"></i> <span>Item Group</span></a></li>
-                        <li><a href="#item_class"><i class="fa fa-map-marker"></i> <span>Item Class</span></a></li>
-                        <li><a href="#item"><i class="fa fa-map-marker"></i> <span>Item</span></a></li>
+                        <li><a href="#warehouse"><i class="fa fa-industry"></i> <span>Warehouse</span></a></li>
+                        <li><a href="#unit"><i class="fa fa-magnet"></i> <span>Unit</span></a></li>
+                        <li><a href="#maker"><i class="fa fa-user"></i> <span>Maker</span></a></li>
+                        <li><a href="#item_type"><i class="fa fa-barcode"></i> <span>Item Type</span></a></li>
+                        <li><a href="#item_group"><i class="fa fa-barcode"></i> <span>Item Group</span></a></li>
+                        <li><a href="#item_class"><i class="fa fa-barcode"></i> <span>Item Class</span></a></li>
+                        <li><a href="#item"><i class="fa fa-barcode"></i> <span>Item</span></a></li>
                     </ul>
                 </li>
 
@@ -267,14 +268,14 @@ desired effect
                         <i class="fa fa-spinner"></i> <span>Operating</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu" >
-                        <li <?php if($this->Menu=='agency') echo 'class="active"'; ?> >
-                            <a href="#agency"><i class="fa fa-industry"></i> <span>Bill</span></a>
-                        </li>
-                        <li <?php if($this->Menu=='recruiter') echo 'class="active"'; ?> >
-                            <a href="#recruiter"><i class="fa fa-user"></i> <span>Sale</span></a>
-                        </li>
+<!--                        <li --><?php //if($this->Menu=='agency') echo 'class="active"'; ?><!-- >-->
+<!--                            <a href="#agency"><i class="fa fa-industry"></i> <span>Bill</span></a>-->
+<!--                        </li>-->
+<!--                        <li --><?php //if($this->Menu=='recruiter') echo 'class="active"'; ?><!-- >-->
+<!--                            <a href="#recruiter"><i class="fa fa-user"></i> <span>Sale</span></a>-->
+<!--                        </li>-->
                         <li <?php if($this->Menu=='register') echo 'class="active"'; ?> >
-                            <a href="#register/manage_register/3"><i class="fa fa-keyboard-o"></i> <span>Stock Transactioin</span></a>
+                            <a href="#stock_transaction"><i class="fa fa-keyboard-o"></i> <span>Stock Transaction</span></a>
                         </li>
                     </ul>
                 </li>
@@ -287,12 +288,12 @@ desired effect
                         <li <?php if($this->Menu=='operating reports') echo 'class="active"'; ?> >
                             <a href="#operating_reports"> <i class="fa fa-file-image-o"></i> Operating reports</a>
                         </li>
-                        <li <?php if($this->Menu=='accounting reports') echo 'class="active"'; ?> >
-                            <a href="#"> <i class="fa fa-file-text"></i> Accounting Reports </a>
-                        </li>
-                        <li <?php if($this->Menu=='payroll reports') echo 'class="active"'; ?> >
-                            <a href="#"> <i class="fa fa-file-powerpoint-o"></i> Payroll Reports</a>
-                        </li>
+<!--                        <li --><?php //if($this->Menu=='accounting reports') echo 'class="active"'; ?><!-- >-->
+<!--                            <a href="#"> <i class="fa fa-file-text"></i> Accounting Reports </a>-->
+<!--                        </li>-->
+<!--                        <li --><?php //if($this->Menu=='payroll reports') echo 'class="active"'; ?><!-- >-->
+<!--                            <a href="#"> <i class="fa fa-file-powerpoint-o"></i> Payroll Reports</a>-->
+<!--                        </li>-->
                     </ul>
                 </li>
 
@@ -485,7 +486,9 @@ desired effect
 
     $(document).ready(function(){
 
-        $("#btn-full-screen").on("click", function(){
+        $("#btn-full-screen").on("click", function(event){
+            event.preventDefault();
+
             launchIntoFullscreen(document.documentElement);
         });
 

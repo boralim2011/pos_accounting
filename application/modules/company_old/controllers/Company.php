@@ -22,33 +22,25 @@ class Company extends MY_Controller {
 
     function manage_company()
     {
-        if(!isset($_POST['ajax']) && !isset($_POST['submit'])) {  $this->show_404();return; }
-
-        $search = isset($_POST['search'])?$_POST['search']:'';
-        $page = isset($_POST['page']) ? $_POST['page']: 1;
-        $display = isset($_POST['display']) ? $_POST['display']: 10;
-        $search_by = isset($_POST['search_by'])? $_POST['search_by']: 'contact_name';
-
+        //if(!isset($_POST['ajax']) && !isset($_POST['submit'])) {  $this->show_404();return; }
 
         $data['companies'] = array();
 
         $company = new Contact_model();
-        $company->search = $search;
-        $company->display = $display;
-        $company->page = $page;
-        $company->search_by = $search_by;
+        if(isset($_POST['submit']))
+        {
+            Model_base::map_objects($company, $_POST);
+            $data = array_merge($data,$_POST);
+
+            //echo json_encode($result);
+            //var_dump($data);
+        }
 
         $company->contact_type = $this->contact_type;
         $result = $company->gets($company);
         if($result->success)$data['companies'] = $result->models;
 
-        //Pagination
-        $data['display'] = $display;
-        $data['page'] = $page;
-        $data['search'] = $search;
-        $data['search_by'] = $search_by;
-        $data['pages'] = is_array($result->models)? ceil($result->models[0]->records / $display): 0;
-        $data['records'] = is_array($result->models)? $result->models[0]->records:0;
+        //var_dump($result); return;
 
         $this->load->view('company/manage_company', $data);
 
@@ -115,7 +107,7 @@ class Company extends MY_Controller {
             $this->form_validation->set_rules('contact_code', 'Company Code', 'trim|required|min_length[2]|max_length[100]');
             $this->form_validation->set_rules('phone_number', 'Phone Number', 'trim|required|min_length[9]|max_length[100]');
             $this->form_validation->set_rules('country_id', 'Country', 'required|greater_than[0]');
-            //$this->form_validation->set_rules('province_city_id', 'Province/City', 'required|greater_than[0]');
+            $this->form_validation->set_rules('province_city_id', 'Province/City', 'required|greater_than[0]');
             //$this->form_validation->set_rules('district_khan_id', 'District/Khan', 'required|greater_than[0]');
             //$this->form_validation->set_rules('commune_sangkat_id', 'Commune/Sangkat', 'required|greater_than[0]');
 
@@ -181,17 +173,25 @@ class Company extends MY_Controller {
         }
         else
         {
-
-            $model = new Contact_model();
-            $model->contact_id = $company_id;
-            $result = $this->Contact_model->get($model);
-            if($result->success)
+            $json = $this->get_json_object();
+            if($json===true)
             {
-                $company = $result->model;
+                $model = new Contact_model();
+                $model->contact_id = $company_id;
+                $result = $this->Contact_model->get($model);
+                if($result->success)
+                {
+                    $company = $result->model;
+                }
+                else
+                {
+                    $this->show_404(); return;
+                }
             }
             else
             {
-                $this->show_404(); return;
+                $company = new Contact_model();
+                Model_base::map_objects($company, $json, true);
             }
 
             if (isset($company->photo) && $company->photo != '')
@@ -227,7 +227,7 @@ class Company extends MY_Controller {
             $this->form_validation->set_rules('contact_code', 'Company Code', 'trim|required|min_length[2]|max_length[100]');
             $this->form_validation->set_rules('phone_number', 'Phone Number', 'trim|required|min_length[9]|max_length[100]');
             $this->form_validation->set_rules('country_id', 'Country', 'required|greater_than[0]');
-            //$this->form_validation->set_rules('province_city_id', 'Province/City', 'required|greater_than[0]');
+            $this->form_validation->set_rules('province_city_id', 'Province/City', 'required|greater_than[0]');
             //$this->form_validation->set_rules('district_khan_id', 'District/Khan', 'required|greater_than[0]');
             //$this->form_validation->set_rules('commune_sangkat_id', 'Commune/Sangkat', 'required|greater_than[0]');
 

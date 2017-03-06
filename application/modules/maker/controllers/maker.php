@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Maker extends My_Controller {
+class Maker extends MY_Controller {
 
     function __construct()
     {

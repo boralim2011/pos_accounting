@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Item_type extends My_Controller {
+class Item_type extends MY_Controller {
 
     function __construct()
     {

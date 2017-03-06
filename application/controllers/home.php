@@ -10,8 +10,14 @@ class Home extends My_Controller
         $this->Menu = 'home';
     }
 
-	public function index()
+	public function index($pos=false)
 	{
+        if($pos)
+        {
+            $this->load->view("pos_home");
+            return;
+        }
+
         if(isset($_POST['ajax']))
         {
             $this->load->view('home');

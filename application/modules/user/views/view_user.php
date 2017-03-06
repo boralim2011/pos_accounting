@@ -33,12 +33,12 @@
 
                     </div>
                     <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <label>Member of</label>
+                        <label>Group</label>
                         <div class="input-group">
                             <div class="input-group-addon">
                                 <i class="fa fa-share-alt"></i>
                             </div>
-                            <input type="text" class="form-control" id="user_group" name="user_group" placeholder="Enter user group name" value="<?php echo isset($user->user_group_name)?$user->user_group_name:''; ?>">
+                            <input type="text" class="form-control" id="user_group_id" name="user_group_id" placeholder="Enter user group name" value="<?php echo isset($user->user_group_name)?$user->user_group_name:''; ?>">
 
                         </div>
                     </div>

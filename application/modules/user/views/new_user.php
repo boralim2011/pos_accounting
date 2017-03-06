@@ -26,9 +26,7 @@
             <div class="box-body">
 
                 <input type="hidden" id="user_id" name="user_id" value="<?php echo isset($user->user_id)? $user->user_id:0;?>"/>
-                <input type="hidden" id="created_date" name="created_date" value="<?php echo isset($user->created_date)? $user->created_date:0;?>" />
                 <input type="hidden" id="image" name="image" value="<?php echo isset($user->image)? $user->image:'';?>" />
-                <input type="hidden" id="is_deletable" name="is_deletable" value="<?php echo isset($user->is_deletable)? $user->is_deletable:1;?>" />
 
                 <div class="row">
                     <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -40,15 +38,15 @@
                         </div>
                     </div>
                     <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <label>Member of</label>
+                        <label>Group</label>
                         <div class="input-group">
                             <div class="input-group-addon">
                                 <i class="fa fa-share-alt"></i>
                             </div>
-                            <select id="user_group" name="user_group" class="form-control select2" data-placeholder="Ex: Administrators"  style="width: 100%; display: none;">
+                            <select id="user_group_id" name="user_group_id" class="form-control select2" data-placeholder="Ex: Administrators"  style="width: 100%; display: none;">
                                 <option></option>
                                 <?php if($user->user_group_id!=0){?>
-                                    <option value="<?php echo $user->user_group_id; ?>" selected="selected"><?php echo $user->user_group_name;?></option>
+                                    <option value="<?php echo $user->user_group_id; ?>" selected="selected"><?php echo isset($user->user_group_name)?$user->user_group_name:"" ;?></option>
                                 <?php }?>
                             </select>
                             <a href="#" class="input-group-addon btn btn-primary" id="btn-new-user-group">
@@ -209,7 +207,7 @@
             showInputs: false
         });
 
-        $("#user_group").select2({
+        $("#user_group_id").select2({
             ajax: {
                 url: "<?php echo base_url()?>user_group/get_combobox_items",
                 dataType: 'json',
@@ -307,6 +305,8 @@
                 },
                 success: function(data, status, xhr)
                 {
+                    //alert(data);
+
                     if(data==521){
                         go_to_login();
                     }

@@ -2,10 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25dbe4a2-eb6c-41e9-905c-f34138a5344f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/exchange_rate/controllers/exchange_rate.php" afterPath="$PROJECT_DIR$/application/modules/exchange_rate/controllers/exchange_rate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/exchange_rate_model.php" afterPath="$PROJECT_DIR$/application/models/exchange_rate_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/exchange_rate/views/manage_exchange_rate.php" afterPath="$PROJECT_DIR$/application/modules/exchange_rate/views/manage_exchange_rate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/exchange_rate/views/new_exchange_rate.php" afterPath="$PROJECT_DIR$/application/modules/exchange_rate/views/new_exchange_rate.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7021ddca986c65928f6932c9baf4f16c96dbccb1c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e70f0862f82d88038b704e2b6b9397751a0e17d8e4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e70f60458eb7c9a53ada59b451296b3674ba0b76bf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7105a783296db32f6c0ec3db900e55ffd09e81953" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7114bee783c92f1a872118e24a8e176b909e6a42d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e716f79e8e9151fa08ad43990d701324673f3bb00e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e71d932afe4456df096aa3f148797f7b64e775e228" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7206f73a28856c53ab62e16e604dcadd94fec3ad2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e721c4f479398d63f66e21e9fe156fef11dfa252eb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e723cc50169f15b0b46e9d1db17880bb4f6d24a222" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7255c50dc423d8bf9532576c5164010928c9f456c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e72591f3678d6c76e7c940a1dfd77aa8948bf33419" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e727ee12e83ebf7d73312958ee1dabee166c1bbcb3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e72a1bd767268571207f86cd3db742dd6f872c8a78" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e732f97dce2bb6b151e1a1ed6fe62bd3d0d16eb556" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e73541bbd6756e6063f8cac692da9dd040b786bb6f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7390d218d5e2e6d017a4628a915b5d9ee34bcb161" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e73bda143ffa079d0ce917b2160c37054c61341358" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e73c01557d019eb3c8d7e773e6da383588b26fc14e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e73ce258da14431cec25570355d65df08777a193ff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e73d5a6ec9a84f493347ef847a411eba94ffadc4df" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7424b800b695b90fceaa40349eabb4de89e7c88e3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7450bcddec17c8f3ead973ad44452b4f5f98387fe" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e747b6a38264c16bb7a307552473691078d715b76e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e74a9e60e507f907a33917d8da92aced38620bc3be" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e74ca224464c3f13f5798328aba54fa25a9d9be57a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e755996100de43de2b55f42b0b78f10b0726f138b0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7568758e92f8570e8dfbddb44f858926b54cad393" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e759ee2750d604845f99f9f4b552d69313d52358b8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e75ca267ba139954aad897c419a17c1beff38ff48f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e75faaaff2e1d00dee574e28213035915d569b7c20" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e76660e06c1b8d0d75327c7da003f4e4d89614cb4e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e766a0bfe8949b75989199b5a02fa32e9d5f7995e1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e76e7829bc34cb0f6dda2fb828a8962c8b7bb30f94" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e772539c95548f801dde90b2721ebceac63f5c0c73" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e774dc1f9953a0aeec8a0879e7fa0e7ee8c7ee730d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7757b50b770da271f6447eac20e50d7e8618b8fc3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7789838dc50795e8afab61751606c3f42a98be7cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e77aff9b6589435e42beb43fbb2d01c1433ebcf0dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e77ff8d257d6d94001176bf8aa60e2fa6d930665ab" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e786add083558b97050abac87c73484d5643a13dda" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e78773a570cd0c9c817c80c6d44954b6e94ae783bd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e78961f71860af34a9bdd9ec323a1505eb6c3df885" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7898c1357437b859fffdb50a0608e4e52a0991c6f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e79141e150b54df27c0279e77dac9c12a128ecc65f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7917568d21798f56e659ce2affdb8f380de526756" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7963987ddb2c1d2b3bcf7b2a64a21a3366cc32352" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7992d58e1c991ee92cd39ba60de334d1f857028d3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e79aaecbd1e119f3c690224f81565fc174ecbf44f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7a58830f35bfdf9f4ca8116cb8587fcb9dd686ee6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7a63d3c1bbba7f46762916c7072cea0c0a8efc3eb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7aa29f2eacbf6564d090edb67c26f1da8b65699f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7afcefe2c22b46ae98c8d91271f48e5c918837648" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7b74b5ee092ae12f2e439895d27c57e02c1f9a95a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7ba6f71761575b21e582d87c8e039a04893227c96" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7c289423d01dabccab663ab17594967b6abfc3470" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7c2b7556f1470362321ab8f6b16056cadf2e59828" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7c69336ae1a330a3feee966699b072f972b369c0e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7cc3c5035f90e482ef8bcd621f9112222d702edbc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7cd2183238dae387658efd0ed702c87cb1e3aee3f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7cdc1e37524cba3f585724c773686357cf557c785" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7cf50bd504cf95eb8d30ef7a4d710e7bd7576a421" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d14a6a6c38158783fa208cde8558a04a7b83650e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d162af7f1e08994c7151a3eceee4f182f0b9917b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d2ed7ffb7c31422dd5b1d43008cd1dd2fa4b5be6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d624b3f4e1c4b0e5ae31bc069b7b5cddf86702a1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d6e094306c38ad7edc737b34afd75f6debb697f6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d776f3b702b42d3cdf116910cefdf3835bfe99d0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7d77ad55b333ded9c488584f2435d3e138872e90c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7e35a352e50f662e3a93ead4cd5fe5a984d51bb7b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7e61a68d656f930cd366dc95ebeb36461656d7315" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7e80cac99f88b4cac14ab6471bcb289bd5d133dcc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7e9e8814a80d3caf8be04272be69ba6b54d9f7351" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7ea1a206ac86bccad402d3dd36aa7e3d7b1df5578" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7ef82fc357e1de421a8c39a61c8e7f45b230adce2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7f57303017ac6a402cfe60878d31214dea7c7e5c2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7f7620e98e7a34b239eb1b06c790e12ca679280da" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7fb252cb92fb3c6ef5132e6aefad99b3f263311f5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\cache\session\ci_session837ec5754f503cfaaee0929fd48974e7fde366ef67f0e7562276e586cbee56b7c6af2fce" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\modules\agency\controllers\agency.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\modules\agency\controllers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\modules\agency\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\modules\agency\views\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\modules\agency\views\manage_agency.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\application\modules\agency\views\new_agency.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\files\photos\AP.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\files\photos\REG-00001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\pos_accounting\files\photos\www.png" afterPath="" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\controllers\home.php" afterPath="$PROJECT_DIR$/application/controllers/Home.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\core\My_controller.php" afterPath="$PROJECT_DIR$/application/core/MY_Controller.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\models\contact_model.php" afterPath="$PROJECT_DIR$/application/models/Contact_model.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\company\controllers\company.php" afterPath="$PROJECT_DIR$/application/modules/company/controllers/Company.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\currency\controllers\currency.php" afterPath="$PROJECT_DIR$/application/modules/currency/controllers/Currency.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\exchange_rate\controllers\exchange_rate.php" afterPath="$PROJECT_DIR$/application/modules/exchange_rate/controllers/Exchange_rate.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\item_class\controllers\item_class.php" afterPath="$PROJECT_DIR$/application/modules/item_class/controllers/Item_class.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\item_group\controllers\item_group.php" afterPath="$PROJECT_DIR$/application/modules/item_group/controllers/Item_group.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\item_type\controllers\item_type.php" afterPath="$PROJECT_DIR$/application/modules/item_type/controllers/Item_type.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\location\controllers\location.php" afterPath="$PROJECT_DIR$/application/modules/location/controllers/Location.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\maker\controllers\maker.php" afterPath="$PROJECT_DIR$/application/modules/maker/controllers/Maker.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\unit\controllers\unit.php" afterPath="$PROJECT_DIR$/application/modules/unit/controllers/Unit.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\user\controllers\user.php" afterPath="$PROJECT_DIR$/application/modules/user/controllers/User.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\user_group\controllers\user_group.php" afterPath="$PROJECT_DIR$/application/modules/user_group/controllers/User_group.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\pos_accounting\application\modules\user_role\controllers\user_role.php" afterPath="$PROJECT_DIR$/application/modules/user_role/controllers/User_role.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/user/views/change_password.php" afterPath="$PROJECT_DIR$/application/modules/user/views/change_password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home.php" afterPath="$PROJECT_DIR$/application/views/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/company/views/manage_company.php" afterPath="$PROJECT_DIR$/application/modules/company/views/manage_company.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/user/views/manage_user.php" afterPath="$PROJECT_DIR$/application/modules/user/views/manage_user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/company/views/new_company.php" afterPath="$PROJECT_DIR$/application/modules/company/views/new_company.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/user/views/new_user.php" afterPath="$PROJECT_DIR$/application/modules/user/views/new_user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/template.php" afterPath="$PROJECT_DIR$/application/views/template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/user/views/view_user.php" afterPath="$PROJECT_DIR$/application/modules/user/views/view_user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aptsec_project.iws" />
@@ -37,142 +144,117 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/user/controllers/user.php">
+      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="4080" max-vertical-offset="8364">
-              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+            <state vertical-scroll-proportion="-119.92308" vertical-offset="1591" max-vertical-offset="13107">
+              <caret line="277" column="38" selection-start-line="277" selection-start-column="38" selection-end-line="277" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_group_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/user_group_model.php">
+      <file leaf-file-name="Journal_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Journal_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308" vertical-offset="306" max-vertical-offset="3264">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="24" />
+            <state vertical-scroll-proportion="-5.9615383" vertical-offset="576" max-vertical-offset="5525">
+              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+              <folding>
+                <marker date="1488700497335" expanded="true" signature="7468:7558" placeholder="select item_..item..." />
+                <marker date="1488700497335" expanded="true" signature="7468:7570" placeholder="select journ..journal..." />
+                <marker date="1488700497335" expanded="true" signature="10391:10529" placeholder="select item_..." />
+                <marker date="1488700497335" expanded="true" signature="10391:10550" placeholder="select journ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.730769" vertical-offset="2" max-vertical-offset="714">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_role_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/user_role_model.php">
+      <file leaf-file-name="pos_home.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/pos_home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="3060">
-              <caret line="32" column="48" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="48" />
-              <folding>
-                <marker date="1484929782827" expanded="true" signature="4578:4698" placeholder="select user_..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchange_rate_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/exchange_rate_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.923077" vertical-offset="2395" max-vertical-offset="3298">
-              <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
-              <folding>
-                <marker date="1485188919415" expanded="true" signature="737:2170" placeholder="select ex.*,..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="839:1437" placeholder="select count..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3820" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3821" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3858" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3862" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3863" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3877" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3914" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:3945" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:4066" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:4067" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:4069" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:4106" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:4139" placeholder="select * fro..exchange_rate..." />
-                <marker date="1485188919415" expanded="true" signature="3793:4190" placeholder="select * fro..exchange_rate..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchange_rate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/controllers/exchange_rate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="799" max-vertical-offset="3638">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.3827839" vertical-offset="2018" max-vertical-offset="8177">
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="currency_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/currency_model.php">
+      <file leaf-file-name="custom_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/style/custom_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="408" max-vertical-offset="3179">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1608" max-vertical-offset="2550">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Journal_item_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Journal_item_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="5440">
+              <caret line="47" column="53" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="53" />
               <folding>
-                <marker date="1485091593976" expanded="true" signature="4628:4743" placeholder="select curre..." />
+                <marker date="1488690346633" expanded="true" signature="6388:6478" placeholder="select item_..item..." />
+                <marker date="1488690346633" expanded="true" signature="9167:9305" placeholder="select item_..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_exchange_rate.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/views/manage_exchange_rate.php">
+      <file leaf-file-name="Item.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/item/controllers/Item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1245421" vertical-offset="4486" max-vertical-offset="6494">
-              <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5653" max-vertical-offset="7021">
+              <caret line="221" column="8" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction_type_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Transaction_type_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="3179">
+              <caret line="31" column="42" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="42" />
               <folding>
-                <marker date="1485193210747" expanded="true" signature="9889:9904" placeholder="..." />
-                <marker date="1485193210747" expanded="true" signature="9968:9983" placeholder="..." />
-                <marker date="1485193210747" expanded="true" signature="10043:10058" placeholder="..." />
-                <marker date="1485193210747" expanded="true" signature="10117:10132" placeholder="..." />
+                <marker date="1488694363446" expanded="true" signature="5042:5162" placeholder="select item_..." />
+                <marker date="1488694363446" expanded="true" signature="5042:5197" placeholder="select trans..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_exchange_rate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/views/new_exchange_rate.php">
+      <file leaf-file-name="Stock_transaction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/stock_transaction/controllers/Stock_transaction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="17.464285" vertical-offset="2453" max-vertical-offset="2941">
-              <caret line="58" column="80" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="80" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1485189593810" expanded="true" signature="2944:3160" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="3232:3531" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="3334:3382" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="3334:3504" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="3576:3798" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="3930:4297" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="3981:4278" placeholder="..." />
-                <marker date="1485189593810" expanded="true" signature="4466:4560" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="7174">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unit_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/unit_model.php">
+      <file leaf-file-name="manage_stock_transaction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/stock_transaction/views/manage_stock_transaction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1570" max-vertical-offset="3162">
-              <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="7140">
+              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding>
-                <marker date="1485070635507" expanded="true" signature="4391:4486" placeholder="select unit_..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/user_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="6052">
-              <caret line="223" column="120" selection-start-line="223" selection-start-column="120" selection-end-line="223" selection-end-column="120" />
-              <folding>
-                <marker date="1485100369177" expanded="true" signature="9952:10047" placeholder="select user_..." />
+                <marker date="1488699937562" expanded="true" signature="11913:11928" placeholder="..." />
+                <marker date="1488699937562" expanded="true" signature="11992:12007" placeholder="..." />
+                <marker date="1488699937562" expanded="true" signature="12067:12082" placeholder="..." />
+                <marker date="1488699937562" expanded="true" signature="12141:12156" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -186,39 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/config/globals.php" />
-        <option value="$PROJECT_DIR$/application/views/show_global_variables.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/application/modules/location/views/manage_location.php" />
-        <option value="$PROJECT_DIR$/application/modules/location/controllers/location.php" />
-        <option value="$PROJECT_DIR$/application/models/model_base.php" />
-        <option value="$PROJECT_DIR$/application/controllers/ci_global_variable_tutorial.php" />
-        <option value="$PROJECT_DIR$/application/models/user_group_model.php" />
-        <option value="$PROJECT_DIR$/application/models/user_role_model.php" />
-        <option value="$PROJECT_DIR$/application/models/company_model.php" />
-        <option value="$PROJECT_DIR$/application/modules/user_group/controllers/user_group.php" />
-        <option value="$PROJECT_DIR$/application/modules/user_role/controllers/user_role.php" />
-        <option value="$PROJECT_DIR$/application/models/unit.php" />
-        <option value="$PROJECT_DIR$/application/modules/unit/views/new_unit.php" />
-        <option value="$PROJECT_DIR$/application/modules/unit/controllers/unit.php" />
-        <option value="$PROJECT_DIR$/application/views/template.php" />
-        <option value="$PROJECT_DIR$/application/modules/maker/views/new_maker.php" />
-        <option value="$PROJECT_DIR$/application/modules/maker/controllers/maker.php" />
-        <option value="$PROJECT_DIR$/application/models/unit_model.php" />
-        <option value="$PROJECT_DIR$/application/models/maker_model.php" />
-        <option value="$PROJECT_DIR$/application/models/item_group_model.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_group/controllers/item_group.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_group/views/new_item_group.php" />
-        <option value="$PROJECT_DIR$/application/models/item_class_model.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_class/controllers/unit.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_class/views/new_item_class.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_class/controllers/item_class.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_type/views/new_type.php" />
-        <option value="$PROJECT_DIR$/application/modules/user/views/new_user.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_type/views/new_item_type.php" />
-        <option value="$PROJECT_DIR$/application/models/item_type_model.php" />
-        <option value="$PROJECT_DIR$/application/modules/item_type/controllers/item_type.php" />
-        <option value="$PROJECT_DIR$/application/modules/currency/controllers/currency.php" />
         <option value="$PROJECT_DIR$/application/models/currency_model.php" />
         <option value="$PROJECT_DIR$/application/modules/currency/views/new_currency.php" />
         <option value="$PROJECT_DIR$/application/modules/item_class/views/manage_item_class.php" />
@@ -237,6 +286,39 @@
         <option value="$PROJECT_DIR$/application/modules/exchange_rate/controllers/exchange_rate.php" />
         <option value="$PROJECT_DIR$/application/modules/exchange_rate/views/new_exchange_rate.php" />
         <option value="$PROJECT_DIR$/application/modules/exchange_rate/views/manage_exchange_rate.php" />
+        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
+        <option value="$PROJECT_DIR$/application/modules/agency/controllers/Agency.php" />
+        <option value="$PROJECT_DIR$/application/modules/company/controllers/Company.php" />
+        <option value="$PROJECT_DIR$/application/modules/currency/controllers/Currency.php" />
+        <option value="$PROJECT_DIR$/application/modules/exchange_rate/controllers/Exchange_rate.php" />
+        <option value="$PROJECT_DIR$/application/modules/item_class/controllers/Item_class.php" />
+        <option value="$PROJECT_DIR$/application/modules/item_group/controllers/Item_group.php" />
+        <option value="$PROJECT_DIR$/application/modules/item_type/controllers/Item_type.php" />
+        <option value="$PROJECT_DIR$/application/modules/location/controllers/Location.php" />
+        <option value="$PROJECT_DIR$/application/modules/maker/controllers/Maker.php" />
+        <option value="$PROJECT_DIR$/application/modules/unit/controllers/Unit.php" />
+        <option value="$PROJECT_DIR$/application/modules/user_group/controllers/User_group.php" />
+        <option value="$PROJECT_DIR$/application/modules/user_role/controllers/User_role.php" />
+        <option value="$PROJECT_DIR$/application/models/Contact_model.php" />
+        <option value="$PROJECT_DIR$/application/modules/location/views/new_location.php" />
+        <option value="$PROJECT_DIR$/application/modules/warehouse/views/new_warehouse.php" />
+        <option value="$PROJECT_DIR$/application/modules/warehouse/views/new_lot.php" />
+        <option value="$PROJECT_DIR$/application/models/Warehouse_model.php" />
+        <option value="$PROJECT_DIR$/application/modules/warehouse/controllers/Warehouse.php" />
+        <option value="$PROJECT_DIR$/application/modules/warehouse/views/manage_warehouse.php" />
+        <option value="$PROJECT_DIR$/application/views/home.php" />
+        <option value="$PROJECT_DIR$/application/modules/item/views/manage_item.php" />
+        <option value="$PROJECT_DIR$/application/modules/item/views/new_item.php" />
+        <option value="$PROJECT_DIR$/application/models/Item_model.php" />
+        <option value="$PROJECT_DIR$/application/views/template.php" />
+        <option value="$PROJECT_DIR$/application/modules/item/controllers/Item.php" />
+        <option value="$PROJECT_DIR$/application/modules/stock_trasaction/controllers/Stock_transaction.php" />
+        <option value="$PROJECT_DIR$/application/models/Transaction_type_model.php" />
+        <option value="$PROJECT_DIR$/application/modules/stock_transaction/controllers/Stock_transaction.php" />
+        <option value="$PROJECT_DIR$/application/modules/stock_transaction/views/manage_stock_transaction.php" />
+        <option value="$PROJECT_DIR$/application/models/Journal_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Home.php" />
+        <option value="$PROJECT_DIR$/application/views/pos_home.php" />
       </list>
     </option>
   </component>
@@ -273,6 +355,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,7 +384,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,33 +398,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aptsec_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_accounting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,117 +416,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aptsec_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_accounting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange_rate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aptsec_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_accounting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange_rate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aptsec_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_accounting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange_rate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aptsec_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_accounting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,28 +480,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27760968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17128874" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -569,310 +525,206 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/company_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Exchange_rate_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="4216">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2395" max-vertical-offset="3298">
+          <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/model_base.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/views/new_exchange_rate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3488372" vertical-offset="94" max-vertical-offset="731">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2453" max-vertical-offset="2941">
+          <caret line="58" column="80" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user_group/controllers/user_group.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/views/manage_exchange_rate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.346153" vertical-offset="1530" max-vertical-offset="3553">
-          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4588" max-vertical-offset="6494">
+          <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user_role/controllers/user_role.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Item_type_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.653847" vertical-offset="714" max-vertical-offset="3570">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/unit/views/new_unit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.642857" vertical-offset="0" max-vertical-offset="2159">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/unit/controllers/unit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.581818" vertical-offset="198" max-vertical-offset="3604">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="4233" max-vertical-offset="13056">
-          <caret line="257" column="20" selection-start-line="257" selection-start-column="20" selection-end-line="257" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/maker/views/new_maker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8095238" vertical-offset="0" max-vertical-offset="2159">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/maker/controllers/maker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8214285" vertical-offset="0" max-vertical-offset="3604">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/maker_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5384614" vertical-offset="197" max-vertical-offset="3162">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_group/controllers/item_group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.619047" vertical-offset="1683" max-vertical-offset="3604">
-          <caret line="191" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/item_group_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8214285" vertical-offset="306" max-vertical-offset="3162">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/item_class_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0119047" vertical-offset="204" max-vertical-offset="3162">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_class/views/new_item_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0119047" vertical-offset="51" max-vertical-offset="2159">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_class/controllers/item_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923" vertical-offset="765" max-vertical-offset="3604">
-          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/location/views/manage_location.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="4488" max-vertical-offset="6188">
-          <caret line="281" column="31" selection-start-line="281" selection-start-column="16" selection-end-line="281" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/location/views/new_location.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="23.538462" vertical-offset="1785" max-vertical-offset="4012">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/item_type_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="3162">
-          <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/location/controllers/location.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="1904" max-vertical-offset="4216">
-          <caret line="125" column="45" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_type/controllers/item_type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3655">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_type/views/new_item_type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2533">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/currency/controllers/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/currency/controllers/currency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="1326" max-vertical-offset="3604">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/currency/views/new_currency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1636364" vertical-offset="816" max-vertical-offset="2210">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_class/views/manage_item_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.576923" vertical-offset="3899" max-vertical-offset="5746">
-          <caret line="244" column="11" selection-start-line="244" selection-start-column="11" selection-end-line="244" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/currency/views/manage_currency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="48.4" vertical-offset="3818" max-vertical-offset="5780">
-          <caret line="68" column="214" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="214" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_group/views/new_item_group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="255" max-vertical-offset="2159">
-          <caret line="30" column="98" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/item_group/views/manage_item_group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="1020" max-vertical-offset="5746">
-          <caret line="68" column="214" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="214" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/maker/views/manage_maker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="5746">
-          <caret line="68" column="214" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="214" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/unit/views/manage_unit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.846154" vertical-offset="3755" max-vertical-offset="5746">
-          <caret line="239" column="28" selection-start-line="239" selection-start-column="28" selection-end-line="239" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3162">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/item_type/views/manage_item_type.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.230769" vertical-offset="3779" max-vertical-offset="5814">
-          <caret line="241" column="33" selection-start-line="241" selection-start-column="33" selection-end-line="241" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3626" max-vertical-offset="5814">
+          <caret line="239" column="60" selection-start-line="239" selection-start-column="60" selection-end-line="239" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user_group/views/manage_user_group.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/currency/controllers/Currency.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="3570" max-vertical-offset="5508">
-          <caret line="214" column="25" selection-start-line="214" selection-start-column="25" selection-end-line="214" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.65384614" vertical-offset="102" max-vertical-offset="3604">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user_role/views/new_user_role.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/controllers/Exchange_rate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="102" max-vertical-offset="2091">
-          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="97" />
+        <state vertical-scroll-proportion="2.6153846" vertical-offset="102" max-vertical-offset="3638">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user_role/views/manage_user_role.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/item_class/controllers/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="952" max-vertical-offset="5202">
-          <caret line="60" column="192" selection-start-line="60" selection-start-column="192" selection-end-line="60" selection-end-column="192" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user/views/view_user.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/item_class/controllers/Item_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="90.23077" vertical-offset="3060" max-vertical-offset="4029">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="102" max-vertical-offset="3604">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user/views/new_user.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/item_group/controllers/Item_group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1851" max-vertical-offset="5814">
-          <caret line="211" column="34" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="34" />
+        <state vertical-scroll-proportion="1.9615384" vertical-offset="153" max-vertical-offset="3604">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user/views/manage_user.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/maker/controllers/Maker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1596" max-vertical-offset="6987">
-          <caret line="293" column="0" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
-          <folding>
-            <marker date="1485094435030" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1485094435030" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1485094435030" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1485094435030" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="3604">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/My_controller.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/unit/controllers/Unit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4096601" vertical-offset="2763" max-vertical-offset="5491">
-          <caret line="176" column="73" selection-start-line="176" selection-start-column="73" selection-end-line="176" selection-end-column="73" />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="3604">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/location_model.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/user_group/controllers/User_group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3808">
-          <caret line="31" column="90" selection-start-line="30" selection-start-column="14" selection-end-line="31" selection-end-column="90" />
-          <folding />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="3553">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/unit_model.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/user_role/controllers/User_role.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1570" max-vertical-offset="3162">
-          <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
-          <folding>
-            <marker date="1485070635507" expanded="true" signature="4391:4486" placeholder="select unit_..." />
-          </folding>
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="3570">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/user_model.php">
+    <entry file="file://$PROJECT_DIR$/template/multi-select.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="6052">
-          <caret line="223" column="120" selection-start-line="223" selection-start-column="120" selection-end-line="223" selection-end-column="120" />
-          <folding>
-            <marker date="1485100369177" expanded="true" signature="9952:10047" placeholder="select user_..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Currency_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="357" max-vertical-offset="3179">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Contact_address_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2805">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Contact_model_old.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="1479" max-vertical-offset="5508">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Company_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.692307" vertical-offset="408" max-vertical-offset="4216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/warehouse/views/new_warehouse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.1153846" vertical-offset="1035" max-vertical-offset="2295">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/item_type/views/new_item_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="2533">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/location/views/new_location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1001" max-vertical-offset="4012">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/warehouse/views/new_lot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="2907">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Warehouse_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="3315">
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/location/views/manage_location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2854" max-vertical-offset="6188">
+          <caret line="287" column="15" selection-start-line="287" selection-start-column="15" selection-end-line="287" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/location/controllers/Location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4216">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/item_group/views/manage_item_group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="5746">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/warehouse/views/manage_warehouse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="6647">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1054">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -880,108 +732,191 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="4964">
           <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/warehouse/controllers/Warehouse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="612" max-vertical-offset="5338">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Item_class_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.8461537" vertical-offset="204" max-vertical-offset="3162">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/item_type/controllers/Item_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="527" max-vertical-offset="3655">
+          <caret line="48" column="84" selection-start-line="43" selection-start-column="7" selection-end-line="48" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="4437" max-vertical-offset="5491">
+          <caret line="276" column="5" selection-start-line="276" selection-start-column="5" selection-end-line="276" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/user/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="782" max-vertical-offset="7922">
+          <caret line="60" column="68" selection-start-line="58" selection-start-column="7" selection-end-line="60" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/item/views/manage_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4166665" vertical-offset="175" max-vertical-offset="7361">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/item/views/new_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.230769" vertical-offset="1137" max-vertical-offset="7344">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Item_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2555" max-vertical-offset="5440">
+          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding>
+            <marker date="1488690346633" expanded="true" signature="-1:-1" placeholder="select item_..item..." />
+            <marker date="1488690346633" expanded="true" signature="-1:-1" placeholder="select conta..contact..." />
+            <marker date="1488690346633" expanded="true" signature="-1:-1" placeholder="select item_..." />
+            <marker date="1488690346633" expanded="true" signature="-1:-1" placeholder="select conta..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Contact_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="9945">
+          <caret line="295" column="147" selection-start-line="295" selection-start-column="12" selection-end-line="295" selection-end-column="147" />
+          <folding>
+            <marker date="1487324001740" expanded="true" signature="-1:-1" placeholder="select conta..contact..." />
+            <marker date="1487324001740" expanded="true" signature="-1:-1" placeholder="select worke..contact..." />
+            <marker date="1487324001740" expanded="true" signature="-1:-1" placeholder="select conta..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/company/controllers/Company.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="6664">
+          <caret line="193" column="42" selection-start-line="191" selection-start-column="11" selection-end-line="193" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/currency_model.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/item/controllers/Item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="408" max-vertical-offset="3179">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <marker date="1485091593976" expanded="true" signature="4628:4743" placeholder="select curre..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/user/controllers/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="4080" max-vertical-offset="8364">
-          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5653" max-vertical-offset="7021">
+          <caret line="221" column="8" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/user_group_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Transaction_type_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="306" max-vertical-offset="3264">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="3179">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="42" />
+          <folding>
+            <marker date="1488694363446" expanded="true" signature="5042:5162" placeholder="select item_..." />
+            <marker date="1488694363446" expanded="true" signature="5042:5197" placeholder="select trans..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/stock_transaction/views/manage_stock_transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="7140">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding>
+            <marker date="1488699937562" expanded="true" signature="11913:11928" placeholder="..." />
+            <marker date="1488699937562" expanded="true" signature="11992:12007" placeholder="..." />
+            <marker date="1488699937562" expanded="true" signature="12067:12082" placeholder="..." />
+            <marker date="1488699937562" expanded="true" signature="12141:12156" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/stock_transaction/controllers/Stock_transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="7174">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/user_role_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Journal_item_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="3060">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="5440">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="53" />
           <folding>
-            <marker date="1484929782827" expanded="true" signature="4578:4698" placeholder="select user_..." />
+            <marker date="1488690346633" expanded="true" signature="6388:6478" placeholder="select item_..item..." />
+            <marker date="1488690346633" expanded="true" signature="9167:9305" placeholder="select item_..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/exchange_rate_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Journal_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.923077" vertical-offset="2395" max-vertical-offset="3298">
-          <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
+        <state vertical-scroll-proportion="-5.9615383" vertical-offset="576" max-vertical-offset="5525">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
           <folding>
-            <marker date="1485188919415" expanded="true" signature="737:2170" placeholder="select ex.*,..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="839:1437" placeholder="select count..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3820" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3821" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3858" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3862" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3863" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3877" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3914" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:3945" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:4066" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:4067" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:4069" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:4106" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:4139" placeholder="select * fro..exchange_rate..." />
-            <marker date="1485188919415" expanded="true" signature="3793:4190" placeholder="select * fro..exchange_rate..." />
+            <marker date="1488700497335" expanded="true" signature="7468:7558" placeholder="select item_..item..." />
+            <marker date="1488700497335" expanded="true" signature="7468:7570" placeholder="select journ..journal..." />
+            <marker date="1488700497335" expanded="true" signature="10391:10529" placeholder="select item_..." />
+            <marker date="1488700497335" expanded="true" signature="10391:10550" placeholder="select journ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/controllers/exchange_rate.php">
+    <entry file="file://$PROJECT_DIR$/application/views/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="799" max-vertical-offset="3638">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        <state vertical-scroll-proportion="-119.92308" vertical-offset="1591" max-vertical-offset="13107">
+          <caret line="277" column="38" selection-start-line="277" selection-start-column="38" selection-end-line="277" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/views/new_exchange_rate.php">
+    <entry file="file://$PROJECT_DIR$/template/style/custom_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.464285" vertical-offset="2453" max-vertical-offset="2941">
-          <caret line="58" column="80" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1485189593810" expanded="true" signature="2944:3160" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="3232:3531" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="3334:3382" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="3334:3504" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="3576:3798" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="3930:4297" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="3981:4278" placeholder="..." />
-            <marker date="1485189593810" expanded="true" signature="4466:4560" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="1608" max-vertical-offset="2550">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/exchange_rate/views/manage_exchange_rate.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1245421" vertical-offset="4486" max-vertical-offset="6494">
-          <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
-          <folding>
-            <marker date="1485193210747" expanded="true" signature="9889:9904" placeholder="..." />
-            <marker date="1485193210747" expanded="true" signature="9968:9983" placeholder="..." />
-            <marker date="1485193210747" expanded="true" signature="10043:10058" placeholder="..." />
-            <marker date="1485193210747" expanded="true" signature="10117:10132" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-9.730769" vertical-offset="2" max-vertical-offset="714">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pos_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3827839" vertical-offset="2018" max-vertical-offset="8177">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

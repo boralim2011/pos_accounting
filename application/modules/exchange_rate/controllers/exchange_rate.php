@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Exchange_rate extends My_Controller {
+class Exchange_rate extends MY_Controller {
 
     function __construct()
     {

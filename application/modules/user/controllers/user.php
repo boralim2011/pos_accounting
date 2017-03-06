@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends My_Controller {
+class User extends MY_Controller {
 
     function __construct()
     {
@@ -47,12 +47,12 @@ class User extends My_Controller {
 
         $data['user_group_id'] = $user_group_id;
         $data['user_role_id'] = $user_role_id;
-        $data['search_by'] = $search_by;
 
         //Pagination
         $data['display'] = $display;
         $data['page'] = $page;
         $data['search'] = $search;
+        $data['search_by'] = $search_by;
         $data['pages'] = is_array($result->models)? ceil($result->models[0]->records / $display): 0;
         $data['records'] = is_array($result->models)? $result->models[0]->records:0;
 
@@ -139,30 +139,18 @@ class User extends My_Controller {
 
         if($this->input->post('submit'))
         {
-            $data['user_id'] = $this->input->post('user_id');
-            $data['user_name'] = $this->input->post('user_name');
-            $data['email'] = $this->input->post('email');
-            $data['password'] = $this->input->post('password');
-            $data['user_group_id'] = $this->input->post('user_group');
-            $data['contact_id'] = $this->input->post('contact_id');
-            $data['is_active'] = isset($_POST['is_active'])?1:0;
-            $data['created_date'] = $this->input->post('created_date');
-
-            $data = $this->security->xss_clean($data);
 
             $this->form_validation->set_rules('user_id', 'User ID', 'trim|required|greater_than[0]');
             $this->form_validation->set_rules('user_name', 'User Name', 'trim|required|min_length[2]|max_length[100]');
             $this->form_validation->set_rules('email', 'Email', 'trim|required|min_length[3]|max_length[100]');
-            //$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]|max_length[20]');
-            //$this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|max_length[20]|matches[password]');
-            $this->form_validation->set_rules('user_group', 'User Type', 'required|greater_than[0]');
+            $this->form_validation->set_rules('user_group_id', 'User Group', 'required|greater_than[0]');
             //$this->form_validation->set_rules('is_active', 'Is active', 'required');
-
 
             if ($this->form_validation->run())
             {
                 $user_model = new User_model();
-                Model_base::map_objects($user_model, $data);
+                Model_base::map_objects($user_model, $_POST);
+                $user_model->is_active = isset($_POST['is_active'])?1:0;
 
                 //update photo
                 if(!$this->upload_image($user_model))
@@ -217,26 +205,18 @@ class User extends My_Controller {
         }
         else
         {
-            $json = $this->get_json_object();
-            if($json===true)
+            $model = new User_model();
+            $model->user_id = $user_id;
+            $result = $this->User_model->get($model);
+            if($result->success)
             {
-                $model = new User_model();
-                $model->user_id = $user_id;
-                $result = $this->User_model->get($model);
-                if($result->success)
-                {
-                    $user = $result->model;
-                }
-                else
-                {
-                    $this->show_404(); return;
-                }
+                $user = $result->model;
             }
             else
             {
-                $user = new User_model();
-                Model_base::map_objects($user, $json, true);
+                $this->show_404(); return;
             }
+
             $data['title'] = "Edit User";
             $data['readonly'] = true;
             $data['url'] = base_url()."user/edit";
@@ -270,29 +250,23 @@ class User extends My_Controller {
 
         if($this->input->post('submit'))
         {
-            $data['user_id'] = $this->input->post('user_id');
-            $data['user_name'] = $this->input->post('user_name');
-            $data['email'] = $this->input->post('email');
-            $data['password'] = $this->input->post('password');
-            $data['user_group_id'] = $this->input->post('user_group');
-            $data['contact_id'] = $this->input->post('contact_id');
-            $data['is_active'] = isset($_POST['is_active'])?1:0;
-            $data['created_date'] = $this->input->post('created_date');
-
-            $data = $this->security->xss_clean($data);
 
             $this->form_validation->set_rules('user_name', 'User Name', 'trim|required|min_length[2]|max_length[100]');
             $this->form_validation->set_rules('email', 'Email', 'trim|required|min_length[3]|max_length[100]');
-            $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]|max_length[20]');
-            $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|max_length[20]|matches[password]');
-            $this->form_validation->set_rules('user_group', 'User Type', 'required|greater_than[0]');
+            if(isset($_POST['user_id']) && $_POST['user_id']>0)
+            {
+                $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]|max_length[20]');
+                $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|max_length[20]|matches[password]');
+            }
+            $this->form_validation->set_rules('user_group_id', 'User Group', 'required|greater_than[0]');
             //$this->form_validation->set_rules('is_active', 'Is active', 'required');
 
 
             if ($this->form_validation->run())
             {
                 $user_model = new User_model();
-                Model_base::map_objects($user_model, $data);
+                Model_base::map_objects($user_model, $_POST);
+                $user_model->is_active = isset($_POST['is_active'])?1:0;
 
                 //update photo
                 if(!$this->upload_image($user_model))

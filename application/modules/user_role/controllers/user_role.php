@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class User_role extends My_Controller {
+class User_role extends MY_Controller {
 
     function __construct()
     {

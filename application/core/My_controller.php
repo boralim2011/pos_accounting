@@ -2,7 +2,7 @@
 
 
 
-class My_controller extends CI_Controller
+class MY_Controller extends CI_Controller
 {
     function __construct($check_session = true)
     {

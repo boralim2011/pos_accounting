@@ -71,6 +71,15 @@
                         </div>
                     </div>
                     <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <label for="phone_number_2">Phone Number 2</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" id="phone_number_2" name="phone_number_2" placeholder="Phone number" value="<?php echo $company->phone_number_2; ?>">
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <label for="email">Email address</label>
                         <div class="input-group">
                             <div class="input-group-addon">
@@ -208,8 +217,6 @@
                 },
                 success: function(data, status, xhr)
                 {
-                    //alert(data);
-
                     if(data==521){
                         go_to_login();
                     }
