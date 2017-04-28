@@ -37,14 +37,17 @@ class Item extends MY_Controller {
         $search_option = isset($_POST['search_option'])? $_POST['search_option'] : 'like';
 
         $item = new Item_model();
-        if(isset($_POST['submit']))
+        if(isset($_POST['ajax']) || isset($_POST['submit']))
         {
-            Model_base::map_objects($item, $_POST);
+            Model_base::map_objects($item, (array) $_POST);
             $data = array_merge($data,$_POST);
-
             //echo json_encode($result);
             //var_dump($data);
+            //var_dump($item);
         }
+
+        //var_dump($data);
+        //var_dump($_POST);
 
         $item->search_by = $search_by;
         $item->search = $search;
@@ -78,6 +81,7 @@ class Item extends MY_Controller {
         $maker = new Maker_model();
         $result = $this->Maker_model->gets($maker);
         if($result->success) $data['makers'] = $result->models;
+
 
         $this->load->view('item/manage_item', $data);
 

@@ -23,7 +23,7 @@ class Login extends My_Controller
 
     public function login()
     {
-        if ($this->is_login())  redirect(base_url());
+        if ($this->is_login()) exit; // redirect(base_url());
 
         $data=array();
 

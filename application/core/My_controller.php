@@ -21,9 +21,11 @@ class MY_Controller extends CI_Controller
 
         $this->lang->load('general','khmer');
         //echo $this->lang->line('add');
+
+        if($check_session) $this->check_user_access();
     }
 
-    public $Menu = 'home';
+    public $Menu = 'pos';
     public $UserSession;
 
     public $Country_names = array(2=>'Cambodia',3 =>'Thai', 4=> 'Malaysia');
@@ -63,6 +65,35 @@ class MY_Controller extends CI_Controller
         //$this->session->unset_userdata('user');
     }
 
+    function check_user_access()
+    {
+        //$ci =& get_instance();
+        //$ci->router->fetch_class();
+        $controller = $this->router->fetch_class();
+        $method = $this->router->fetch_method();
+        $default_con = $this->router->default_controller;
+
+        $allow = isset($this->UserSession->user_group_id) && ($controller == $default_con || $controller."/".$method==$default_con || $this->UserSession->user_group_id == 1);
+
+        if(!$allow)
+        {
+            if(isset($_POST['ajax']) || isset($_POST['submit']))
+            {
+                echo '522';
+                $location =  base_url()."pos/show_404";
+                header("status: 522 $location");
+                header("Refresh: 0; url=$location");
+                exit;
+            }
+            else
+            {
+                redirect('pos/show_404', "refresh");
+                exit;
+            }
+        }
+
+    }
+
     function load_header_view($page, $title)
     {
         $data['Page'] = $page;
@@ -84,7 +115,7 @@ class MY_Controller extends CI_Controller
             $data['title'] = 'Error:404 Page not found';
             $data['view'] = '404';
             //$data['script_view'] = '';
-            $this->load->view('template', $data);
+            $this->load->view('pos_template', $data);
         }
     }
 
@@ -295,6 +326,9 @@ class MY_Controller extends CI_Controller
         return base_url()."template/dist/img/logo.png";
     }
 
+    function get_blank_item(){
+        return base_url()."files/item_no_image.png";
+    }
 
     // Check date format, if input date is valid return TRUE else returned FALSE.
     function valid_date($date)

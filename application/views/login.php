@@ -126,7 +126,7 @@
 
     }
 
-    function go_to(controller)
+    function go_to(controller='')
     {
         window.location = '<?php echo base_url();?>'+ controller;
     }
@@ -178,7 +178,7 @@
                     else
                     {
                         if(data.success===true){
-                            go_to("home");
+                            go_to(''); //base_utl();
                         }
                         //alert(data.message);
                         show_message(data.message);

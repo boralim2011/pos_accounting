@@ -250,7 +250,7 @@ class Item_model extends Model_base
 
         if($this->is_exist_code($item))
         {
-            return Message_result::error_message('Item name is exist');
+            return Message_result::error_message('Item code is exist');
         }
 
         if($this->is_exist_barcode($item))

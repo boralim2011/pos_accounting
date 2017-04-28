@@ -284,7 +284,7 @@
             var item_class_id = $("#item_class_id").val();
             var maker_id = $("#amker_id").val();
 
-            alert(item_type_id);
+            //alert(item_type_id);
 
             var posting = $.post(
                 url,
@@ -325,7 +325,7 @@
                 var model = JSON.parse(btn.attr('data-json'));
                 var formData = new FormData();
                 formData.append('submit', 1);
-                formData.append('contact_id', model.contact_id);
+                formData.append('item_id', model.item_id);
 
                 $.ajax({
                     //url: '<?php //echo base_url();?>item_group/delete',

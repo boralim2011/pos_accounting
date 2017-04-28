@@ -6,7 +6,7 @@
     </h1>
     <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-home"></i> home</a></li>
-    <li><a href="#user"><i class="fa fa-user"></i> Manage Item</a></li>
+    <li><a href="#item"><i class="fa fa-barcode"></i> Manage Item</a></li>
     <li class="active"><?php echo isset($title)? $title:'New Item'; ?></li>
     </ol>
 </section>
@@ -378,7 +378,7 @@
                 url: url,
                 type: 'POST',
                 data: formData,
-                //dataType:"json",
+                dataType:"json",
                 //async: false,
                 cache: false,
                 beforeSend: function(xhr){
@@ -386,7 +386,7 @@
                 },
                 success: function(data, status, xhr)
                 {
-                    alert(data);
+                    //alert(data);
                     if(data==521){
                         go_to_login();
                     }

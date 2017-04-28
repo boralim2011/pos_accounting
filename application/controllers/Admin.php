@@ -1,31 +1,29 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends My_Controller
+class Admin extends My_Controller
 {
     public function __construct()
     {
 
         parent::__construct();
 
-        $this->Menu = 'home';
+        $this->Menu = 'admin';
     }
 
-	public function index($pos=false)
+	public function index()
 	{
-        if($pos)
-        {
-            $this->load->view("pos_home");
-            return;
-        }
-
         if(isset($_POST['ajax']))
         {
             $this->load->view('home');
+
+            //$data['title'] = 'Dashboard';
+            //$data['view'] = 'home';
+            //$this->load->view('template', $data);
         }
         else
         {
             $data['title'] = 'Dashboard';
-            //$data['view'] = 'home';
+            $data['view'] = 'home';
             $this->load->view('template', $data);
         }
 

@@ -79,7 +79,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         }
     </script>
 
-
+    <!-- jQuery 2.1.4 -->
+    <script src="<?php echo base_url();?>template/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 
 </head>
 <!--
@@ -229,7 +230,7 @@ desired effect
                 <li class="header">Main Menu</li>
                 <!-- Optionally, you can add icons to the links -->
                 <li  >
-                    <a href="#home"><i class="fa fa-qrcode"></i> <span>Dashboard</span></a>
+                    <a href="#admin"><i class="fa fa-qrcode"></i> <span>Dashboard</span></a>
                 </li>
                 <li class="treeview">
                     <a href="#">
@@ -260,6 +261,17 @@ desired effect
                         <li><a href="#item_group"><i class="fa fa-barcode"></i> <span>Item Group</span></a></li>
                         <li><a href="#item_class"><i class="fa fa-barcode"></i> <span>Item Class</span></a></li>
                         <li><a href="#item"><i class="fa fa-barcode"></i> <span>Item</span></a></li>
+
+                        <li><a href="#room_type"><i class="fa fa-cubes"></i> <span>Room Type</span></a></li>
+                        <li><a href="#room"><i class="fa fa-cubes"></i> <span>Room</span></a></li>
+
+                        <!--
+                        <li><a href="#contact_type"><i class="fa fa-user"></i> <span>Contact Type</span></a></li>
+                        <li><a href="#contact"><i class="fa fa-user"></i> <span>Contact</span></a></li>
+                        -->
+
+                        <li><a href="#card_type"><i class="fa fa-id-card-o"></i> <span>Card Type</span></a></li>
+                        <li><a href="#card"><i class="fa fa-id-card-o"></i> <span>Card</span></a></li>
                     </ul>
                 </li>
 
@@ -307,7 +319,7 @@ desired effect
 
     <!-- content view go here  -->
 
-    <?php //if( isset($view) && $view!='') $this->load->view($view); ?>
+    <?php if( isset($view) && $view!='') $this->load->view($view); ?>
 
     <!-- end content view -->
 
@@ -327,7 +339,7 @@ desired effect
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Create the tabs -->
         <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <!--<li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>-->
+            <!--<li class="active"><a href="#control-sidebar-admin-tab" data-toggle="tab"><i class="fa fa-admin"></i></a></li>-->
             <li class="active">
                 <a href="#control-sidebar-settings-tab" data-toggle="tab" class="align-left">
                     <i class="fa fa-gear"></i> Skin Color Setting
@@ -337,7 +349,7 @@ desired effect
         <!-- Tab panes -->
         <div class="tab-content">
             <!-- Home tab content -->
-            <!--<div class="tab-pane active" id="control-sidebar-home-tab">-->
+            <!--<div class="tab-pane active" id="control-sidebar-admin-tab">-->
             <!--<h3 class="control-sidebar-heading">Recent Activity</h3>-->
             <!--<ul class="control-sidebar-menu">-->
             <!--<li>-->
@@ -432,8 +444,7 @@ desired effect
 
 <!-- REQUIRED JS SCRIPTS -->
 
-<!-- jQuery 2.1.4 -->
-<script src="<?php echo base_url();?>template/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
 <!-- Bootstrap 3.3.5 -->
 <script src="<?php echo base_url();?>template/bootstrap/js/bootstrap.min.js"></script>
 
@@ -532,7 +543,7 @@ desired effect
     {
         var $hash = location.hash.toString();
 
-        if(typeof $hash === typeof undefined || $hash==='' || $hash==='#') $hash = '#home';
+        if(typeof $hash === typeof undefined || $hash==='' || $hash==='#') return; // $hash = '#admin';
 
         var $a = $('a[href="'+$hash+'"]:first');
 
@@ -551,20 +562,26 @@ desired effect
             $root,
             $root + '<?php echo SELF;?>',
             $root + '<?php echo SELF;?>/',
-            $root + '<?php echo SELF;?>/home',
-            $root + '<?php echo SELF;?>/home/',
-            $root + '<?php echo SELF;?>/home<?php echo $this->config->item('url_suffix');?>',
-            $root + '<?php echo SELF;?>/home<?php echo $this->config->item('url_suffix');?>/',
-            $root + 'home',
-            $root + 'home/',
-            $root + 'home<?php echo $this->config->item('url_suffix');?>',
-            $root + 'home<?php echo $this->config->item('url_suffix');?>/',
+            $root + '<?php echo SELF;?>/admin',
+            $root + '<?php echo SELF;?>/admin/',
+            $root + '<?php echo SELF;?>/admin<?php echo $this->config->item('url_suffix');?>',
+            $root + '<?php echo SELF;?>/admin<?php echo $this->config->item('url_suffix');?>/',
+            $root + 'admin',
+            $root + 'admin/',
+            $root + 'admin<?php echo $this->config->item('url_suffix');?>',
+            $root + 'admin<?php echo $this->config->item('url_suffix');?>/',
         ];
 
         var $url = $root + $hash.replace('#','');
         var $current_url = window.location.toString();
         $current_url = $current_url.replace($hash,'');
-        if($roots.indexOf($current_url)< 0 ) $url = $root+'home/show_404';
+
+        if($roots.indexOf($current_url)< 0 )
+        {
+            //$url = $root+'pos/show_404';
+            window.location = '<?php echo base_url("admin/show_404");?>';
+            return;
+        }
 
         var $data = $a.attr('data-json');
         if (typeof $data === typeof undefined || $data === false)
@@ -582,6 +599,10 @@ desired effect
                 if(data==521)
                 {
                     go_to_login();
+                }
+                else if(data==522)
+                {
+                    window.location = '<?php echo base_url("admin/show_404");?>';
                 }
                 else
                 {
