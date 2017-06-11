@@ -31,7 +31,7 @@ class User_model extends Model_base
         $page = isset($model->page)?$model->page:1;
         $offset = ($page-1) * $display;
 
-        $search = $model->search;
+        $search = isset($model->search)? $model->search: "";
         $field = isset($model->search_by)? $model->search_by: "user_name";
 
         $user_group_id = $model->user_group_id;
@@ -319,6 +319,7 @@ class User_model extends Model_base
             ->from('user')
             ->join('user_group', 'user.user_group_id = user_group.user_group_id');
         $this->db->where('email', $user->email);
+        $this->db->or_where('user_name', $user->email);
         $this->db->where('password', Model_base::encrypt_password($user->password));
 
         $result = $this->db->get();

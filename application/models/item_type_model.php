@@ -164,7 +164,8 @@ class Item_type_model extends Model_base
 
     function get_combobox_items(Item_type_model $model)
     {
-        $sql = "select item_type_id as 'id', item_type_name as 'text' from item_type where item_type_name like'%$model->item_type_name%'";
+        $sql = "select item_type_id as 'id', item_type_name as 'text' from item_type ".
+               "where $model->parent_id in (0, parent_id) and item_type_name like'%$model->item_type_name%'";
         $query = $this->db->query($sql);
 
         if(!$query || $query->num_rows()== 0)

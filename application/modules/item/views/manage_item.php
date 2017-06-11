@@ -20,7 +20,10 @@
 
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-top: 3px;" >
-                            <a href="#item/add" class="btn btn-primary" ><i class="fa fa-plus"></i> Add</a>
+                            <a href="#item/add_product" class="btn btn-primary" ><i class="fa fa-plus"></i> Product</a>
+                            <a href="#item/add_service" class="btn btn-primary" ><i class="fa fa-plus"></i> Service</a>
+                            <a href="#item/add_mixed" class="btn btn-primary" ><i class="fa fa-plus"></i> Mixed</a>
+<!--                            <a href="#item/add_item_set" class="btn btn-primary" ><i class="fa fa-plus"></i> Item Set</a>-->
                             <a href="#item" class="btn btn-primary btn-refresh"><i class="fa fa-refresh"></i> Refresh</a>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-top: 3px;">
@@ -108,14 +111,15 @@
                         <tbody>
                         <?php if(isset($items) && is_array($items)){
                             foreach($items as $row){
+                                $edit = $row->parent_id==1?"edit_product":($row->parent_id==2?"edit_service":($row->parent_id==3?"edit_mixed":"edit_item_set"));
                                 ?>
                                 <tr>
                                     <td></td>
-                                    <td><?php echo isset($row->item_name)? $row->item_name:"";?></td>
+                                    <td><?php echo isset($row->item_name)? $row->item_name:""; ?></td>
                                     <td><?php echo isset($row->item_code)? $row->item_code:"";?></td>
                                     <td>
-                                        <a href="#item/edit/<?php echo $row->item_id;?>" data-json='{"item_id":<?php echo $row->item_id;?>}' class="inline-button" data-toggle="tooltip" title="Edit"> <i class="fa fa-pencil text-orange"></i> </a>
-                                        <a href="#" data-json='{"item_id":<?php echo $row->item_id;?>}' class="inline-button btn-delete" data-toggle="tooltip" title="Delete" url="<?php echo base_url();?>item/delete"> <i class="fa fa-trash-o text-red"></i> </a>
+                                        <a href="#item/<?php echo $edit; ?>/<?php echo $row->item_id;?>" data-json='{"item_id":"<?php echo $row->item_id;?>"}' class="inline-button" data-toggle="tooltip" title="Edit"> <i class="fa fa-pencil text-orange"></i> </a>
+                                        <a href="#" data-json='{"item_id":"<?php echo $row->item_id;?>"}' class="inline-button btn-delete" data-toggle="tooltip" title="Delete" url="<?php echo base_url();?>item/delete"> <i class="fa fa-trash-o text-red"></i> </a>
                                     </td>
                                 </tr>
                             <?php
@@ -272,34 +276,34 @@
             if(e.keyCode==13) post_search();
         });
 
-
-        function post_search( page=1)
-        {
-            var count = $("#display").val();
-            var search = $("#search").val();
-            var url = "<?php echo base_url()?>item/manage_item";
-            var search_by = $("#search_by").val();
-            var item_type_id = $("#item_type_id").val();
-            var item_group_id = $("#item_group_id").val();
-            var item_class_id = $("#item_class_id").val();
-            var maker_id = $("#amker_id").val();
-
-            //alert(item_type_id);
-
-            var posting = $.post(
-                url,
-                { ajax: 1, item_type_id:item_type_id, item_group_id:item_group_id, item_class:item_class_id, maker_id:maker_id, search_by: search_by, search: search, page: page, display: (count ? count : 10) },
-                function (data, status, xhr) {
-                    if (data == 521) {
-                        go_to_login();
-                    }
-                    else {
-                        $("#display-content").empty().append(data);
-                    }
-                }
-            );
-        }
     });
+
+    function post_search( page=1)
+    {
+        var count = $("#display").val();
+        var search = $("#search").val();
+        var url = "<?php echo base_url()?>item/manage_item";
+        var search_by = $("#search_by").val();
+        var item_type_id = $("#item_type_id").val();
+        var item_group_id = $("#item_group_id").val();
+        var item_class_id = $("#item_class_id").val();
+        var maker_id = $("#amker_id").val();
+
+        //alert(item_class_id);
+
+        var posting = $.post(
+            url,
+            { ajax: 1, item_type_id:item_type_id, item_group_id:item_group_id, item_class_id:item_class_id, maker_id:maker_id, search_by: search_by, search: search, page: page, display: (count ? count : 10) },
+            function (data, status, xhr) {
+                if (data == 521) {
+                    go_to_login();
+                }
+                else {
+                    $("#display-content").empty().append(data);
+                }
+            }
+        );
+    }
 
 </script>
 
@@ -346,7 +350,8 @@
                         else{
                             if(data.success===true)
                             {
-                                if ($(".btn-refresh").length) $(".btn-refresh").trigger('click');
+                                //if ($(".btn-refresh").length) $(".btn-refresh").trigger('click');
+                                post_search();
                             }
                             show_message(data.message, $("#message"));
                         }

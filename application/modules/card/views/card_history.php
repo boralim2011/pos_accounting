@@ -12,121 +12,98 @@
 <!-- Main content -->
 <section class="content no-margin-height">
 
-    <div class="row">
-        <div class="col-xs-12">
 
-            <div class="box box-info">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Card Info:</h3>
-                    <div class="box-tools pull-right">
-                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        <!--<button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>-->
-                    </div>
-                </div><!-- /.box-header -->
-                <div class="box-body">
-                    <div class="row">
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label for="card_type">Card Type</label>
-                            <input type="text" class="form-control" id="card_type" name="card_type" placeholder="Enter card type" value="<?php echo $card->card_type_name; ?>">
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <input type="hidden" id="card_id" name="card_id" value="<?php echo $card->card_id;?>" />
-
-                            <label for="card_number">Card Number</label>
-                            <input type="text" class="form-control" id="card_number" name="card_number" placeholder="Enter card number" value="<?php echo $card->card_number; ?>">
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label for="card_name">Card Name</label>
-                            <input type="text" class="form-control" id="card_name" name="card_name" placeholder="Enter card name" value="<?php echo $card->card_name; ?>">
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label for="card_name_kh">Card Name(Khmer)</label>
-                            <input type="text" class="form-control" id="card_name_kh" name="card_name_kh" placeholder="Enter card name" value="<?php echo $card->card_name_kh; ?>">
-                        </div>
-
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label> Register Date</label>
-                           <input type="text" class="form-control" name="register_date" id="register_date" value="<?php echo $card->register_date;?>">
-                        </div>
-
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label><span class="text-red">*</span> Expired Date</label>
-                            <input type="text" class="form-control" name="expired_date" id="expired_date" value="<?php echo $card->expired_date;?>">
-                        </div>
-
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label for="discount_rate">Discount Rate</label>
-                            <input type="text" class="form-control" id="discount_rate" name="discount_rate" placeholder="Enter card name" value="<?php echo $card->discount_rate; ?>">
-                        </div>
-
-                        <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <label for="is_active">&nbsp;</label>
-                            <div>
-                                <label><input type="checkbox" class="minimal form-control" id="manage_stock" name="is_active" <?php echo $card->is_active==1?'checked="checked"':"";?> > Active</label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--
-                <div class="box-footer">
-                    <button type="button" class="btn btn-primary" name="submit" id="submit"><i class="fa fa-save"></i> Submit </button>
-                    <a href="#card" class="btn btn-default"><i class="fa fa-close"></i> Cancel </a>
-                </div>
-                -->
-
-            </div><!-- /.box -->
-        </div><!-- /.col -->
-    </div><!-- /.row -->
 
     <!-- Small boxes (Stat box) -->
     <div class="row">
         <div class="col-xs-12">
             <div class="box box-info">
                 <div class="box-header">
-
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-top: 3px;" >
-                            <a href="#" class="btn btn-primary" id="btn-new-deposit"><i class="fa fa-plus"></i> Deposit</a>
-                            <a href="#" class="btn btn-primary" id="btn-new-withdraw"><i class="fa fa-plus"></i> Withdraw</a>
-                            <a href="#card/history/<?php echo $card->card_id;?>" class="btn btn-primary btn-refresh"><i class="fa fa-refresh"></i> Refresh</a>
+                            <a href="#card/deposit" class="btn btn-primary" id="btn-new-deposit"><i class="fa fa-plus"></i> Deposit</a>
+                            <a href="#card/withdraw" class="btn btn-primary" id="btn-new-withdraw"><i class="fa fa-minus"></i> Withdraw</a>
+                            <a href="#card/history" class="btn btn-primary btn-refresh"><i class="fa fa-refresh"></i> Refresh</a>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-top: 3px;">
+                            <div class="row">
+                                <div class="form-group ccol-lg-6 col-sm-6 col-xs-12">
+                                    <select id="search_by" name="search_by" class="form-control select2" data-placeholder="Search By"  style="width: 100%;">
+                                        <option value="card_number" <?php echo isset($search_by) && $search_by=="card_number" ? 'selected="selected"':'';?> >Card Number</option>
+                                        <option value="card_name" <?php echo isset($search_by) && $search_by=="card_name" ? 'selected="selected"':'';?> >Card Name</option>
+                                        <option value="card_name_kh" <?php echo isset($search_by) && $search_by=="card_name_kh" ? 'selected="selected"':'';?> >Card Name KH</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-6 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="search" name="search" placeholder="Search" value="<?php echo isset($search)? $search : "";?>"/>
+                                        <a class="input-group-addon btn btn-primary" name="btn-search" id="btn-search" href="#">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!-- /.box-header -->
                 <div class="box-body" id="display-list">
+
                     <table id="history-table" class="table table-bordered table-hover data-table">
                         <thead>
                         <tr>
-                            <th>No</th>
+                            <th >No</th>
                             <th>Date</th>
+                            <th>Card Name</th>
+                            <!--<th>Card Number </th>-->
                             <th>Transaction</th>
                             <th>Amount</th>
                             <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <?php if(isset($histories) && is_array($histories)){
-                            foreach($histories as $row){
-                                ?>
-                                <tr>
-                                    <td></td>
-                                    <td><?php echo isset($row->history_date)? $row->history_date:"";?></td>
-                                    <td><?php echo isset($row->is_deposit)? "Deposit":"Withdraw";?></td>
-                                    <td><?php echo isset($row->amount_in_company_currency)? $row->amount_in_company_currency:"0";?></td>
-                                    <td>
-                                        <a href="#" data-json='{"history_id":"<?php echo $row->history_id;?>"}' class="inline-button btn-view" data-toggle="tooltip" title="View Detail"> <i class="fa fa-search text-green"></i> </a>
-                                        <a href="#" data-json='{"history_id":"<?php echo $row->history_id;?>"}' class="inline-button btn-edit" data-toggle="tooltip" title="Edit"> <i class="fa fa-pencil text-orange"></i> </a>
-                                        <a href="#" data-json='{"history_id":"<?php echo $row->history_id;?>"}' class="inline-button btn-delete" data-toggle="tooltip" title="Delete" url="<?php echo base_url();?>card_type/delete"> <i class="fa fa-trash-o text-red"></i> </a>
-                                    </td>
-                                </tr>
-                            <?php
+                        <?php
+
+                            $total_deposit = 0;
+                            $total_withdraw = 0;
+
+                            if(isset($histories) && is_array($histories))
+                            {
+                                foreach($histories as $row)
+                                {
+                                    $total_deposit += $row->is_deposit==1 ?$row->amount_in_company_currency:0;
+                                    $total_withdraw += $row->is_deposit==0 ?$row->amount_in_company_currency:0;
+
+                                    ?>
+                                    <tr>
+                                        <td></td>
+                                        <td><?php echo isset($row->history_date)? $row->history_date:"";?></td>
+                                        <td><?php echo isset($row->card_name)? $row->card_name:"";?></td>
+                                        <!--<td><?php //echo isset($row->card_number)? $row->card_number:"";?></td>-->
+                                        <td><?php echo isset($row->is_deposit) && $row->is_deposit==1 ? "Deposit":"Withdraw";?></td>
+                                        <td><?php echo isset($row->amount_in_company_currency)? $row->amount_in_company_currency:"0";?></td>
+                                        <td>
+                                            <!--
+                                            <a href="#card/view_history" data-json='{"history_id":"<?php echo $row->history_id;?>"}' class="inline-button btn-view" data-toggle="tooltip" title="View Detail"> <i class="fa fa-search text-green"></i> </a>
+                                            <a href="#" data-json='{"history_id":"<?php echo $row->history_id;?>"}' class="inline-button btn-edit" data-toggle="tooltip" title="Edit"> <i class="fa fa-pencil text-orange"></i> </a>
+                                            -->
+                                            <a href="#card/delete_history" data-json='{"history_id":"<?php echo $row->history_id;?>"}' class="inline-button btn-delete" data-toggle="tooltip" title="Delete" url="<?php echo base_url();?>card/delete_history"> <i class="fa fa-trash-o text-red"></i> </a>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
                             }
-                        }
                         ?>
                         </tbody>
 
                     </table>
+
+                    <div class="row">
+                        <br>
+                        <div class="col-lg-4 col-sm-4 col-xs-12">Total Deposit : <b> <?php echo $total_deposit;?></b>  </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-12">Total Withdraw : <b> <?php echo $total_withdraw;?></b></div>
+                        <div class="col-lg-4 col-sm-4 col-xs-12">Total Balance : <b> <?php echo $total_deposit - $total_withdraw;?></b></div>
+                    </div>
+
 
                     <div class="row">
                         <div class="col-xs-4">
@@ -143,6 +120,7 @@
                         </div>
                         <div class="col-xs-8">
                             <div id="page-selection" class="pull-right"> </div>
+
                             <div style="margin-top: 20px; padding: 5px 20px;" class="pull-right">
                                 Total:  <span style="font-weight: bold;"> <?php echo $records; ?> </span> records
                             </div>
@@ -200,6 +178,22 @@
 
         $(".select2").select2();
 
+        //iCheck for checkbox and radio inputs
+        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+        });
+        //Red color scheme for iCheck
+        $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+            checkboxClass: 'icheckbox_minimal-red',
+            radioClass: 'iradio_minimal-red'
+        });
+        //Flat red color scheme for iCheck
+        $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+            checkboxClass: 'icheckbox_flat-green',
+            radioClass: 'iradio_flat-green'
+        });
+
         $('#display').change(function(event){
             event.preventDefault();
 
@@ -234,19 +228,29 @@
             return false;
         });
 
+        $("#btn-search").click(function(event){
+            event.preventDefault();
+
+            post_search();
+        });
+
+        $('#search').keyup(function (e)
+        {
+            if(e.keyCode==13) post_search();
+        });
+
         function post_search( page=1)
         {
             var count = $("#display").val();
             var search = $("#search").val();
-            var url = "<?php echo base_url()?>card/history/<?php echo $card->card_id; ?>";
+            var url = "<?php echo base_url()?>card/history";
             var search_by = $("#search_by").val();
-            var card_id = '<?php echo $card->card_id; ?>';
 
             //alert(card_type_id);
 
             var posting = $.post(
                 url,
-                { ajax: 1, card_id:card_id, search_by: search_by, search: search, page: page, display: (count ? count : 10) },
+                { ajax: 1, search_by: search_by, search: search, page: page, display: (count ? count : 10) },
                 function (data, status, xhr) {
                     if (data == 521) {
                         go_to_login();
@@ -283,7 +287,7 @@
                 var model = JSON.parse(btn.attr('data-json'));
                 var formData = new FormData();
                 formData.append('submit', 1);
-                formData.append('card_id', model.card_id);
+                formData.append('history_id', model.history_id);
 
                 $.ajax({
                     //url: '<?php //echo base_url();?>card_group/delete',

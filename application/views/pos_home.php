@@ -11,37 +11,38 @@
                 </li>
                 <li data-toggle="tooltip" title="Sale">
                     <!--<a href="#" class="btn app-menu-btn big-icon btn-round btn-success"> <i class="fa fa-shopping-cart"></i> </a>-->
-                    <a href="#" class="btn app-menu-btn big-icon btn-round btn-warning">
+                    <a href="#sale" class="btn app-menu-btn big-icon btn-round btn-warning">
                         <i class="fa fa-shopping-basket"></i>
                         <span class="caption">Sale</span>
                     </a>
 
                 </li>
+                <!--
+                <li data-toggle="tooltip" title="Cash Refill">
+                    <a href="#payment" class="btn app-menu-btn big-icon btn-round btn-primary">
+                        <i class="fa fa-dollar"></i>
+                        <span class="caption">Payment</span>
+                    </a>
+                </li>
+                -->
                 <li data-toggle="tooltip" title="Room/Table">
                     <!--<a href="#" class="btn app-menu-btn big-icon btn-round btn-success"> <i class="fa fa-shopping-cart"></i> </a>-->
                     <a href="#room/search" class="btn app-menu-btn big-icon btn-round btn-success">
                         <i class="fa fa-cubes"></i>
                         <span class="caption">Room/Table</span>
                     </a>
-
                 </li>
                 <li data-toggle="tooltip" title="Card Register">
                     <!--<a href="#" class="btn app-menu-btn big-icon btn-round btn-info"> <i class="fa fa-cc-visa"></i> </a>-->
-                    <a href="#" class="btn app-menu-btn big-icon btn-round btn-info">
+                    <a href="#card" class="btn app-menu-btn big-icon btn-round btn-info">
                         <i class="fa fa-id-card-o"></i>
                         <span class="caption">Card Register</span>
                     </a>
                 </li>
                 <li data-toggle="tooltip" title="Cash Refill">
-                    <a href="#" class="btn app-menu-btn big-icon btn-round btn-primary">
-                        <i class="fa fa-dollar"></i>
-                        <span class="caption">Cash Refill</span>
-                    </a>
-                </li>
-                <li data-toggle="tooltip" title="Cash Withdraw">
-                    <a href="#" class="btn app-menu-btn big-icon btn-round btn-warning">
+                    <a href="#card/history" class="btn app-menu-btn big-icon btn-round btn-primary">
                         <i class="fa fa-tag"></i>
-                        <span class="caption">Cash Withdraw</span>
+                        <span class="caption">Deposit/Withdraw</span>
                     </a>
                 </li>
                 <li data-toggle="tooltip" title="Check Out">

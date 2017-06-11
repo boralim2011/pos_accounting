@@ -9,7 +9,7 @@
                             ?>
                             <li data-toggle="tooltip" title="<?php echo isset($row->room_name)? $row->room_name:"";?>">
                                 <!--<a href="#" data-json='{"room_id":"<?php echo "$row->room_id";?>"}' class="btn app-menu-btn btn-flat btn-success btn-choose-room">-->
-                                <a href="#item" data-json='{"room_id":"<?php echo "$row->room_id";?>"}' class="btn app-menu-btn btn-flat btn-success">
+                                <a href="#sale/add/<?php echo $row->room_id;?>" data-json='{"room_id":"<?php echo "$row->room_id";?>"}' class="btn app-menu-btn btn-flat btn-success">
                                     <img src="<?php echo $image;?>"/>
                                     <span class="caption"><?php echo isset($row->room_name)? $row->room_name:"";?></span>
 

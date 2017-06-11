@@ -16,8 +16,9 @@ class Exchange_rate_model extends Model_base
     public $ask_rate = 1;
     public $is_inverse = 0;
 
-    function gets(Exchange_rate_model $model)
+    function gets(Exchange_rate_model $model=null)
     {
+        if($model==null) $model = $this;
 
         $display = isset($model->display)? $model->display:10;
         $page = isset($model->page)?$model->page:1;
@@ -64,8 +65,9 @@ class Exchange_rate_model extends Model_base
         }
     }
 
-    function get(Exchange_rate_model $model)
+    function get(Exchange_rate_model $model=null)
     {
+        if($model==null) $model = $this;
         $sql="select ex.*, fc.currency_name from_currency_name, tc.currency_name to_currency_name ".
             "from exchange_rate ex ".
             "join currency fc on fc.currency_id=ex.from_currency_id ".
@@ -85,21 +87,61 @@ class Exchange_rate_model extends Model_base
         }
     }
 
-    function is_exist(Exchange_rate_model $exchange_rate)
+    function get_display(Exchange_rate_model $model=null)
     {
-        $this->db->where('exchange_rate_id', $exchange_rate->exchange_rate_id);
+        if($model==null) $model=$this;
+
+        //From : KHR, To : USD, Bit-Ask : 4000-4100, Inverse : 0 => 1 USD = 4000 KHR
+        //From : USD, To : KHR, Bit-Ask : 4000-4100, Inverse : 1 => 1 USD = 4000 KHR
+
+        return $model->is_inverse==1 ?
+            "1 $model->from_currency_name = $model->bit_rate $model->to_currency_name":
+            "1 $model->to_currency_name = $model->bit_rate $model->from_currency_name";
+    }
+
+    function get_by_currency(Exchange_rate_model $model=null)
+    {
+        if($model==null) $model = $this;
+
+        $sql="select ex.*, fc.currency_name from_currency_name, tc.currency_name to_currency_name ".
+            "from exchange_rate ex ".
+            "join currency fc on fc.currency_id=ex.from_currency_id ".
+            "join currency tc on tc.currency_id=ex.to_currency_id ".
+            "where (ex.from_currency_id=$model->from_currency_id && ex.to_currency_id=$model->to_currency_id) ".
+            "or (ex.from_currency_id=$model->to_currency_id && ex.to_currency_id=$model->from_currency_id) "
+        ;
+
+        $result =$this->db->query($sql);
+
+        if(!$result || $result->num_rows()== 0)
+        {
+            return Message_result::error_message('Search not found');
+        }
+        else
+        {
+            return Message_result::success_message('', $result->first_row('Exchange_rate_model'));
+        }
+    }
+
+    function is_exist(Exchange_rate_model $model=null)
+    {
+        if($model==null) $model = $this;
+
+        $this->db->where('exchange_rate_id', $model->exchange_rate_id);
 
         $result =$this->db->get('exchange_rate');
 
         return $result && $result->num_rows()> 0;
     }
 
-    function is_exist_rate(Exchange_rate_model $exchange_rate)
+    function is_exist_rate(Exchange_rate_model $model=null)
     {
+        if($model==null) $model = $this;
+
         $sql ="select * from exchange_rate ".
-            "where ((from_currency_id=$exchange_rate->from_currency_id and to_currency_id=$exchange_rate->to_currency_id) ".
-            "or (from_currency_id=$exchange_rate->to_currency_id and to_currency_id=$exchange_rate->from_currency_id)) ".
-            "and exchange_rate_id!=$exchange_rate->exchange_rate_id"
+            "where ((from_currency_id=$model->from_currency_id and to_currency_id=$model->to_currency_id) ".
+            "or (from_currency_id=$model->to_currency_id and to_currency_id=$model->from_currency_id)) ".
+            "and exchange_rate_id!=$model->exchange_rate_id"
         ;
         $result = $this->db->query($sql);
 

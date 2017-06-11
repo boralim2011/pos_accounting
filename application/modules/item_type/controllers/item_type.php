@@ -193,6 +193,7 @@ class Item_type extends MY_Controller {
 
         $model = new Item_type_model();
         $model->item_type_name = $search;
+        $model->parent_id = isset($_GET['parent_id'])?$_GET['parent_id']:0;
 
         $result = $this->Item_type_model->get_combobox_items($model);
         if($result->success)

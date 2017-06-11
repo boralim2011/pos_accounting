@@ -57,6 +57,31 @@
                     </div>
 
                     <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <label >Gender</label>
+                        <select class="select2" id="gender" name="gender" data-placeholder="--Select--" style="width: 100%;">
+                            <option></option>
+                            <option value="F" <?php echo isset($card->gender) && $card->gender=="F"?'selected="selected"':''; ?> >Female</option>
+                            <option value="M" <?php echo isset($card->gender) && $card->gender=="M"?'selected="selected"':''; ?> >Male</option>
+                            <option value="O" <?php echo isset($card->gender) && $card->gender=="O"?'selected="selected"':''; ?>>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <label for="age_range_id">Age Range</label>
+                        <div class="input-group">
+                            <select class="select2" id="age_range_id" name="age_range_id" data-placeholder="--Select--" style="width: 100%;">
+                                <option></option>
+                                <?php if($card->age_range_id!=0){?>
+                                    <option value="<?php echo $card->age_range_id; ?>" selected="selected"><?php echo $card->age_range_name;?></option>
+                                <?php }?>
+                            </select>
+                            <a href="#" class="input-group-addon btn btn-primary" id="btn-new-age_range" data-toggle="tooltip" title="New Age Range">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <label><span class="text-red">*</span> Register Date</label>
                         <div class="input-group">
                             <div class="input-group-addon">
@@ -74,6 +99,11 @@
                             </div>
                             <input type="text" class="form-control datepicker" name="expired_date" id="expired_date" value="<?php echo $card->expired_date;?>">
                         </div>
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter phone number" value="<?php echo $card->phone_number; ?>">
                     </div>
 
                     <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -139,6 +169,8 @@
             showInputs: false
         });
 
+        $("#gender").select2();
+
         $("#card_type_id").select2({
             ajax: {
                 url: "<?php echo base_url()?>card_type/get_combobox_items",
@@ -163,6 +195,29 @@
             minimumInputLength: 1
         });
 
+        $("#age_range_id").select2({
+            ajax: {
+                url: "<?php echo base_url()?>age_range/get_combobox_items",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term // search term
+                    };
+                },
+                processResults: function (data) {
+                    // parse the results into the format expected by Select2.
+                    // since we are using custom formatting functions we do not need to
+                    // alter the remote JSON data
+                    return {
+                        results: data
+                    };
+                },
+                cache: true
+                //,allowClear: true
+            },
+            minimumInputLength: 1
+        });
 
 
     });
@@ -234,5 +289,6 @@
 
 
 <?php $this->load->view('card_type/new_card_type'); ?>
+<?php $this->load->view('age_range/new_age_range'); ?>
 
 

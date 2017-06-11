@@ -35,4 +35,70 @@ class Model_base extends CI_Model
         return sha1('P@ssw0rd'.$password);
     }
 
+    static function round_up( $value, $precision = 0)
+    {
+        $pow = pow ( 10, $precision );
+        return ( ceil( $pow * $value ) + ceil( $pow * $value - ceil( $pow * $value ) ) ) / $pow;
+    }
+
+    static function round_down( $value, $precision = 0)
+    {
+        $pow = pow ( 10, $precision );
+        return ( floor( $pow * $value ) + floor( $pow * $value - floor( $pow * $value ) ) ) / $pow;
+    }
+
+
+    function default_user_image()
+    {
+        return base_url()."template/dist/img/user.png";
+    }
+
+    function get_file_site()
+    {
+        return base_url()."files/";
+    }
+
+    function get_file_path()
+    {
+        return FCPATH."files/";
+    }
+
+    function get_photo_site()
+    {
+        return $this->get_file_site()."photos/";
+    }
+
+    function get_photo_path()
+    {
+        return $this->get_file_path()."photos/";
+    }
+
+    function get_user_image_site()
+    {
+        return $this->get_file_site()."users/";
+    }
+
+    function get_user_image_path()
+    {
+        return $this->get_file_path()."users/";
+    }
+
+    function get_logo_image(){
+        return base_url()."template/dist/img/logo.png";
+    }
+
+    function get_blank_item(){
+        return base_url()."files/item_no_image.png";
+    }
+
+    function get_item_path()
+    {
+        return $this->get_file_path()."items/";
+    }
+
+    function get_item_site()
+    {
+        return $this->get_file_site()."items/";
+    }
+
 }

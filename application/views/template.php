@@ -79,6 +79,70 @@ scratch. This page gets rid of all links and provides the needed markup only.
         }
     </script>
 
+    <style type="text/css">
+
+        .app-menu { list-style: none; text-indent: 0; padding: 0; margin: 0; clear:both; }
+        .app-menu li { display: inline-block; margin: 30px 20px; float: left; }
+        /*.app-menu li:hover .btn-flat { outline: 8px solid #cccccc; }*/
+        /*.app-menu li:hover .btn-flat.btn-info { outline-color: #00acd6; }*/
+        /*.app-menu li:hover .btn-flat.btn-success { outline-color: #00a65a; }*/
+        /*.app-menu li:hover .btn-flat.btn-primary { outline-color: #3c8dbc; }*/
+        /*.app-menu li:hover .btn-flat.btn-warning { outline-color: #f39c12; }*/
+        /*.app-menu li:hover .btn-flat.btn-danger { outline-color: #dd4b39; }*/
+
+        .app-menu-btn { width: 160px; height: 160px; text-align: center; position: relative; }
+        .app-menu-btn.btn-round { border-radius: 30px; -moz-border-radius: 30px; -webkit-border-right: 30px; -khtml-border-radius: 30px; }
+        .app-menu-btn.btn-flat { padding: 5px; }
+        .app-menu-btn.big-icon { font-size: 100px; }
+
+        /*.app-menu-btn img { display: block; margin: 5px auto; width: 120px; height: 90px; border-radius: 30%; -moz-border-radius: 30%; -webkit-border-right: 30%;  -khtml-border-radius: 30%; }*/
+        /*.app-menu-btn span { display: block; margin: 5px auto; white-space: pre-line; overflow: hidden; max-height: 40px; }*/
+        /*.app-menu-btn .price {  padding: 3px 10px; right:-10px; top:-15px; position: absolute; border-radius: 3px; background-color: #1ab7ea; color: #ffffff; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }*/
+        /*.app-menu-btn .price {  padding: 3px 10px; right:-10px; top:-15px; position: absolute; border-radius: 3px; background-color: #333333; color: #ffffff; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";}*/
+        /*.app-menu-btn .caption { height: 40px; max-height: 40px; }*/
+        /*.app-menu-btn.big-icon .caption { position: absolute; left: 0; bottom: -30px; font-size: 16px; color: #0000ff; text-align: center; width: 100%; height: auto;  }*/
+
+        .app-menu-btn img { margin: 0; width: 100%; height: 100%; }
+        .app-menu-btn span { display: block; white-space: pre-line; overflow: hidden; color: #ffffff; }
+        .app-menu-btn.btn-default span { background-color: #666666; }
+        .app-menu-btn.btn-primary span { background-color: #3c8dbc; }
+        .app-menu-btn.btn-info span { background-color: #00acd6; }
+        .app-menu-btn.btn-success span { background-color: #00a65a; }
+        .app-menu-btn.btn-warning span { background-color: #f39c12; }
+        .app-menu-btn.btn-danger span { background-color: #dd4b39; }
+
+        .app-menu-btn .price {  padding: 3px 10px; right: -10px; top: -10px; position: absolute; border-radius: 3px; min-width:20px; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }
+        .app-menu-btn .caption { position: absolute; bottom: 0; left: 0; max-height: 70px; text-align: left; padding: 5px;  width: 100%; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }
+        .app-menu-btn.big-icon .caption { position: absolute; left: 0; bottom: -30px; font-size: 16px; color: #003399; background-color: transparent; text-align: center; width: 100%; height: auto;  }
+
+
+
+        @media screen and (max-width: 768px)
+        {
+            .app-menu li { display: inline-block; margin: 10px; float: left; }
+            .app-menu li:hover .btn-flat { outline-width: 4px; }
+
+            .app-menu-btn{width: 70px; height: 70px; }
+            .app-menu-btn.btn-round { border-radius: 10px; -moz-border-radius: 10px; -webkit-border-right: 10px; -khtml-border-radius: 10px; }
+            .app-menu-btn.btn-flat { padding: 1px; }
+            .app-menu-btn.big-icon { font-size: 40px !important; }
+
+            /*.app-menu-btn img { display: block; margin: 3px auto; width: 45px; height: 45px; }*/
+            /*.app-menu-btn span { display: none; }*/
+            /*.app-menu-btn .price { display: block; padding: 2px 5px; }*/
+            /*.app-menu-btn .caption { display: block; width: 70px; height: auto; max-height: 60px; padding: 2px 5px; left: -1px; bottom:-20px; position: absolute; border-radius: 3px; background-color: #1ab7ea; color: #ffffff; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }*/
+            /*.app-menu-btn .caption { display: block; width: 70px; height: auto; max-height: 60px; padding: 2px 5px; left: -1px; bottom:-20px; position: absolute; border-radius: 3px; background-color: #333333; color: #ffffff; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }*/
+            /*.app-menu-btn.big-icon .caption { display: none; }*/
+
+            .app-menu-btn .price { display: block; padding: 0px; }
+            .app-menu-btn .caption { max-height: 40px; padding: 0px; }
+            .app-menu-btn.big-icon .caption { display: none; }
+
+        }
+
+
+    </style>
+
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url();?>template/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 
@@ -248,9 +312,9 @@ desired effect
                     </a>
                     <ul class="treeview-menu">
                         <!-- Company -->
-                        <li><a href="#company"><i class="fa fa-bank"></i> <span>Company</span></a></li>
+                        <!--<li><a href="#company"><i class="fa fa-bank"></i> <span>Company</span></a></li>-->
 
-                        <li><a href="#currency"><i class="fa fa-dollar"></i> <span>Curency</span></a></li>
+                        <li><a href="#currency"><i class="fa fa-dollar"></i> <span>Currency</span></a></li>
                         <li><a href="#exchange_rate"><i class="fa fa-money"></i> <span>Exchange Rate</span></a></li>
 
                         <!-- Item master -->
@@ -269,6 +333,7 @@ desired effect
                         <li><a href="#contact_type"><i class="fa fa-user"></i> <span>Contact Type</span></a></li>
                         <li><a href="#contact"><i class="fa fa-user"></i> <span>Contact</span></a></li>
                         -->
+                        <li><a href="#age_range"><i class="fa fa-sort-numeric-asc"></i> <span>Age Range</span></a></li>
 
                         <li><a href="#card_type"><i class="fa fa-id-card-o"></i> <span>Card Type</span></a></li>
                         <li><a href="#card"><i class="fa fa-id-card-o"></i> <span>Card</span></a></li>
@@ -287,7 +352,8 @@ desired effect
 <!--                            <a href="#recruiter"><i class="fa fa-user"></i> <span>Sale</span></a>-->
 <!--                        </li>-->
                         <li <?php if($this->Menu=='register') echo 'class="active"'; ?> >
-                            <a href="#stock_transaction"><i class="fa fa-keyboard-o"></i> <span>Stock Transaction</span></a>
+                            <a href="#sale"><i class="fa fa-keyboard-o"></i> <span>Sale</span></a>
+<!--                            <a href="#stock_transaction"><i class="fa fa-keyboard-o"></i> <span>Stock Transaction</span></a>-->
                         </li>
                     </ul>
                 </li>
@@ -297,8 +363,8 @@ desired effect
                         <i class="fa fa-file-text-o"></i> <span>Reporting</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li <?php if($this->Menu=='operating reports') echo 'class="active"'; ?> >
-                            <a href="#operating_reports"> <i class="fa fa-file-image-o"></i> Operating reports</a>
+                        <li <?php if($this->Menu=='sale report') echo 'class="active"'; ?> >
+                            <a href="#sale_report"> <i class="fa fa-file-image-o"></i> Sale Report</a>
                         </li>
 <!--                        <li --><?php //if($this->Menu=='accounting reports') echo 'class="active"'; ?><!-- >-->
 <!--                            <a href="#"> <i class="fa fa-file-text"></i> Accounting Reports </a>-->

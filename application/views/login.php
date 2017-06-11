@@ -39,7 +39,7 @@
         <p class="login-box-msg">Login Form</p>
         <form action="<?php echo base_url();?>login" method="post" id="login-form">
             <div class="form-group has-feedback">
-                <input name="email" type="email" class="form-control" placeholder="Email" value="<?php if(isset($email)) echo $email;?>">
+                <input name="email" type="text" class="form-control" placeholder="User Name or Email" value="<?php if(isset($email)) echo $email;?>">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">

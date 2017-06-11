@@ -73,7 +73,8 @@ class MY_Controller extends CI_Controller
         $method = $this->router->fetch_method();
         $default_con = $this->router->default_controller;
 
-        $allow = isset($this->UserSession->user_group_id) && ($controller == $default_con || $controller."/".$method==$default_con || $this->UserSession->user_group_id == 1);
+        $allow = isset($this->UserSession->user_group_id) &&
+            ($controller == $default_con || $controller."/".$method==$default_con || $this->UserSession->user_group_id == 1);
 
         if(!$allow)
         {
@@ -328,6 +329,16 @@ class MY_Controller extends CI_Controller
 
     function get_blank_item(){
         return base_url()."files/item_no_image.png";
+    }
+
+    function get_item_path()
+    {
+        return $this->get_file_path()."items/";
+    }
+
+    function get_item_site()
+    {
+        return $this->get_file_site()."items/";
     }
 
     // Check date format, if input date is valid return TRUE else returned FALSE.

@@ -94,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         .app-menu-btn.btn-warning span { background-color: #f39c12; }
         .app-menu-btn.btn-danger span { background-color: #dd4b39; }
 
-        .app-menu-btn .price {  padding: 3px 10px; right: -10px; top: -10px; position: absolute; border-radius: 3px; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }
+        .app-menu-btn .price {  padding: 3px 10px; right: -10px; top: -10px; position: absolute; border-radius: 3px; min-width:20px; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }
         .app-menu-btn .caption { position: absolute; bottom: 0; left: 0; max-height: 70px; text-align: left; padding: 5px;  width: 100%; opacity: 0.85; -khtml-opacity: 0.85; -moz-opacity:0.85; filter: alpha(opacity=85); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; }
         .app-menu-btn.big-icon .caption { position: absolute; left: 0; bottom: -30px; font-size: 16px; color: #003399; background-color: transparent; text-align: center; width: 100%; height: auto;  }
 
@@ -276,6 +276,27 @@ desired effect
 
 </div>
 
+
+<!--Dialog message-->
+<!--<div class="modal modal-success fade in" id="dialog-user-type">-->
+<div class="modal modal-primary fade in" id="dialog-confirm">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Confirm Message!</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 no-margin">
+                    <button type="button" class="btn btn-outline" id="btn-ok"><i class="fa fa-check"></i> Yes</button>
+                    <button type="button" class="btn btn-outline" data-dismiss="modal"><i class="fa fa-close"></i> No</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!-- REQUIRED JS SCRIPTS -->
 

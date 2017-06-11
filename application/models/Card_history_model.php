@@ -20,8 +20,9 @@ class Card_history_model extends Model_base
     public $exchange_rate = 1;
     public $currency_id;
     public $is_inverse=0;
-
-    public $is_deposit = 1;
+    public $is_deposit=0;
+    public $is_payment=0;
+    public $note;
 
 
     function gets(Card_history_model $card_history)
@@ -30,11 +31,10 @@ class Card_history_model extends Model_base
         $page = isset($card_history->page)?$card_history->page:1;
         $offset = ($page-1) * $display;
 
-        //$search = isset($card_history->search)? $card_history->search: "";
-        //$search_by = isset($card_history->search_by)? $card_history->search_by: "card_history_name";
-        //$search_option = isset($card_history->search_option)? $card_history->search_option : 'like';
+        $search = isset($card_history->search)? $card_history->search: "";
+        $search_by = isset($card_history->search_by)? $card_history->search_by: "card_number";
+        $search_option = isset($card_history->search_option)? $card_history->search_option : 'like';
 
-        $is_deposit = isset($card_history->is_deposit)? $card_history->is_deposit : -1;
         $card_id = isset($card_history->card_id)? $card_history->card_id:0;
 
         $all_date = isset($card_history->all_date) && $card_history->all_date==1? 1 : 0;
@@ -42,24 +42,24 @@ class Card_history_model extends Model_base
         $from_date = isset($card_history->from_date)? $card_history->from_date : Date('Y-m-d');
         $to_date = isset($card_history->to_date)? $card_history->to_date : Date('Y-m-d');
 
-        $sql = "SELECT ch.*, ".
+        $sql = "SELECT ch.*, c.card_number, c.card_name, ".
             "(select count(*) ".
-            "from card_history ".
-            "where $is_deposit in (-1, is_deposit) ".
-            "and $card_id in (0, card_id) ".
-            //"and ('$search'='' || ".
-            //"('$search_option'='exact' && $search_by='$search') || ".
-            //"('$search_option'='start_with' && $search_by LIKE '$search%' ESCAPE '!') || ".
-            //"('$search_option'='like' && $search_by LIKE '%$search%' ESCAPE '!')) ".
-            "AND (($all_date=1 && $date_of is not null) || $date_of BETWEEN '$from_date 00:00:00' and '$to_date 23:59:59') ".
+            "from card_history ch ".
+            "join card c on c.card_id=ch.card_id ".
+            "where $card_id in (0, c.card_id) ".
+            "and ('$search'='' || ".
+            "('$search_option'='exact' && c.$search_by='$search') || ".
+            "('$search_option'='start_with' && c.$search_by LIKE '$search%' ESCAPE '!') || ".
+            "('$search_option'='like' && c.$search_by LIKE '%$search%' ESCAPE '!')) ".
+            "AND (($all_date=1 && ch.$date_of is not null) || ch.$date_of BETWEEN '$from_date 00:00:00' and '$to_date 23:59:59') ".
             ") records ".
             "from card_history ch ".
-            "where $is_deposit in (-1, ch.is_deposit) ".
-            "and $card_id in (0, ch.card_id) ".
-            //"and ('$search'='' || ".
-            //"('$search_option'='exact' && ch.$search_by='$search') || ".
-            //"('$search_option'='start_with' && ch.$search_by LIKE '$search%' ESCAPE '!') || ".
-            //"('$search_option'='like' && ch.$search_by LIKE '%$search%' ESCAPE '!')) ".
+            "join card c on c.card_id=ch.card_id ".
+            "where $card_id in (0, ch.card_id) ".
+            "and ('$search'='' || ".
+            "('$search_option'='exact' && c.$search_by='$search') || ".
+            "('$search_option'='start_with' && c.$search_by LIKE '$search%' ESCAPE '!') || ".
+            "('$search_option'='like' && c.$search_by LIKE '%$search%' ESCAPE '!')) ".
             "AND (($all_date=1 && ch.$date_of is not null) || ch.$date_of BETWEEN '$from_date 00:00:00' and '$to_date 23:59:59') ".
             "LIMIT $offset, $display"
         ;
@@ -113,6 +113,8 @@ class Card_history_model extends Model_base
         unset($card_history->history_id);
 
         //echo $this->db->insert_string('card_history', $card_history); exit;
+        //$message = $this->db->insert_string('card_history', $card_history);
+        //return Message_result::error_message($message);
 
         $result=$this->db->insert('card_history', $card_history);
 

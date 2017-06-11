@@ -22,6 +22,11 @@ class Card_model extends Model_base
     public $expired_date;
     public $is_active = 1;
 
+    public $phone_number;
+    public $address;
+    public $age_range_id;
+    public $gender;
+
     //public $income_account_id;
     //public $inventory_account_id;
     //public $cogs_account_id;
@@ -85,15 +90,14 @@ class Card_model extends Model_base
 
     function get(Card_model $card)
     {
-        $this->db->select("c.*, ct.card_type_name");
+        //$result=$this->db->query("select c.*, ct.card_type_name from card c join card_type ct on ct.card_type_id=c.card_type_id where c.card_id=$card->card_id");
+
+        $this->db->select("c.*, ct.card_type_name, ar.age_range_name");
         $this->db->from("card c");
         $this->db->join("card_type ct","c.card_type_id=ct.card_type_id");
-        //$this->db->join("card_group ig","i.card_group_id=ig.card_group_id");
-        //$this->db->join("card_class ic","i.card_class_id=ic.card_class_id");
-        //$this->db->join("maker m","i.maker_id=m.maker_id");
-        //$this->db->join("unit u","i.unit_id=u.unit_id");
-        //$this->db->join("warehouse dl","i.default_lot_id=dl.warehouse_id");
+        $this->db->join("age_range ar","c.age_range_id=ar.age_range_id", "left");
         $this->db->where('c.card_id', $card->card_id);
+
         $result =$this->db->get();
 
         if(!$result || $result->num_rows()== 0)
@@ -199,6 +203,8 @@ class Card_model extends Model_base
 
         if(!$result->success || $result->model->is_deletable==0) return Message_result::error_message('Card cannot be delete');
 
+        if($result->model->get_total_deposit() > 0 || $result->model->get_total_withdraw()>0) return Message_result::error_message('Card is used');
+
         $this->db->where('card_id', $card->card_id);
 
         $result=$this->db->delete('card');
@@ -215,7 +221,7 @@ class Card_model extends Model_base
 
     function get_combobox_cards(Card_model $model)
     {
-        $sql = "select card_id as 'id', card_name as 'text' from card where card_name like'%$model->card_name%' and '$model->card_type' in ('', card_type)";
+        $sql = "select card_id as 'id', card_number as 'text' from card where card_number like'%$model->card_number%'";
         $query = $this->db->query($sql);
 
         if(!$query || $query->num_rows()== 0)
@@ -228,5 +234,36 @@ class Card_model extends Model_base
         }
     }
 
+    function get_total_deposit()
+    {
+        $sql = "select sum(amount_in_company_currency) total from card_history where is_deposit = 1 and card_id = $this->card_id";
+        $result = $this->db->query($sql);
+
+        return (!$result || $result->num_rows()== 0 || !$result->first_row()->total)? 0 : $result->first_row()->total;
+    }
+
+    function get_total_withdraw()
+    {
+        $sql = "select sum(amount_in_company_currency) total from card_history where is_deposit = 0 and card_id = $this->card_id";
+        $result = $this->db->query($sql);
+
+        return (!$result || $result->num_rows()== 0 || !$result->first_row()->total)? 0 : $result->first_row()->total;
+    }
+
+    function get_total_payment()
+    {
+        $sql = "select sum(amount_in_company_currency) total from card_history where is_deposit = 0 and is_payment = 1 and card_id = $this->card_id";
+        $result = $this->db->query($sql);
+
+        return (!$result || $result->num_rows()== 0 || !$result->first_row()->total)? 0 : $result->first_row()->total;
+    }
+
+    function get_total_balance()
+    {
+        $sql = "select sum(case when is_deposit=1 then amount_in_company_currency else -amount_in_company_currency end) total from card_history where card_id = $this->card_id";
+        $result = $this->db->query($sql);
+
+        return (!$result || $result->num_rows()== 0 || !$result->first_row()->total)? 0 : $result->first_row()->total;
+    }
 
 }

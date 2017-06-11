@@ -54,22 +54,23 @@ class Item_model extends Model_base
         $item_class_id = isset($item->item_class_id)? $item->item_class_id:0;
         $maker_id = isset($item->maker_id)? $item->maker_id:0;
 
-        $sql = "SELECT i.*, ".
+        $sql = "SELECT i.*, it.parent_id, u.unit_name, ".
             "(select count(*) ".
-            "from item ".
-            "where is_active = 1 ".
-            "and $item_type_id in (0, item_type_id) ".
-            "and $item_group_id in (0, item_group_id) ".
-            "and $item_class_id in (0, item_class_id) ".
-            "and $maker_id in (0, maker_id) ".
+            "from item i ".
+            "join item_type it on it.item_type_id=i.item_type_id ".
+            "where $item_type_id in (0, i.item_type_id) ".
+            "and $item_group_id in (0, i.item_group_id) ".
+            "and $item_class_id in (0, i.item_class_id) ".
+            "and $maker_id in (0, i.maker_id) ".
             "and ('$search'='' || ".
-            "('$search_option'='exact' && $search_by='$search') || ".
-            "('$search_option'='start_with' && $search_by LIKE '$search%' ESCAPE '!') || ".
-            "('$search_option'='like' && $search_by LIKE '%$search%' ESCAPE '!')) ".
+            "('$search_option'='exact' && i.$search_by='$search') || ".
+            "('$search_option'='start_with' && i.$search_by LIKE '$search%' ESCAPE '!') || ".
+            "('$search_option'='like' && i.$search_by LIKE '%$search%' ESCAPE '!')) ".
             ") records ".
             "from item i ".
-            "where i.is_active = 1 ".
-            "and $item_type_id in (0, i.item_type_id) ".
+            "join item_type it on it.item_type_id=i.item_type_id ".
+            "left join unit u on i.unit_id=u.unit_id ".
+            "where $item_type_id in (0, i.item_type_id) ".
             "and $item_group_id in (0, i.item_group_id) ".
             "and $item_class_id in (0, i.item_class_id) ".
             "and $maker_id in (0, i.maker_id) ".
@@ -102,10 +103,10 @@ class Item_model extends Model_base
         $this->db->from("item i");
         $this->db->join("item_type it","i.item_type_id=it.item_type_id");
         $this->db->join("item_group ig","i.item_group_id=ig.item_group_id");
-        $this->db->join("item_class ic","i.item_class_id=ic.item_class_id");
-        $this->db->join("maker m","i.maker_id=m.maker_id");
+        $this->db->join("item_class ic","i.item_class_id=ic.item_class_id", "left");
+        $this->db->join("maker m","i.maker_id=m.maker_id", "left");
         $this->db->join("unit u","i.unit_id=u.unit_id");
-        $this->db->join("warehouse dl","i.default_lot_id=dl.warehouse_id");
+        $this->db->join("warehouse dl","i.default_lot_id=dl.warehouse_id", "left");
         $this->db->where('i.item_id', $item->item_id);
         $result =$this->db->get();
 
@@ -210,6 +211,11 @@ class Item_model extends Model_base
         return $model->item_code;
     }
 
+    function get_image_file_name()
+    {
+        return str_replace(" ", "_", $this->image);
+    }
+
     function add(Item_model &$item)
     {
         $this->generate_code($item);
@@ -227,6 +233,7 @@ class Item_model extends Model_base
 
         //for mysqli driver
         unset($item->item_id);
+        $item->image = $item->get_image_file_name();
 
         //echo $this->db->insert_string('item', $item); exit;
 
@@ -263,6 +270,7 @@ class Item_model extends Model_base
         if(!$result->success || $result->model->is_editable==0) return Message_result::error_message('Item cannot be edit');
 
         $this->db->where('item_id', $item->item_id);
+        $item->image = $item->get_image_file_name();
 
         $result = $this->db->update('item', $item);
 
@@ -281,6 +289,10 @@ class Item_model extends Model_base
         $result = $this->get($item);
 
         if(!$result->success || $result->model->is_deletable==0) return Message_result::error_message('Item cannot be delete');
+
+        $sql = "select count(*) count from journal_item where item_id=$item->item_id";
+        $result= $this->db->query($sql);
+        if($result->first_row()->count>0) return Message_result::error_message('Item is in used!');
 
         $this->db->where('item_id', $item->item_id);
 
@@ -311,5 +323,17 @@ class Item_model extends Model_base
         }
     }
 
+
+    function get_image()
+    {
+        if (isset($this->image) && $this->image != '')
+        {
+            return $this->get_item_site().$this->image;
+        }
+        else
+        {
+            return $this->get_blank_item();
+        }
+    }
 
 }

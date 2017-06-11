@@ -17,7 +17,6 @@
         <div class="col-xs-12">
             <div class="box box-info">
                 <div class="box-header">
-
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-top: 3px;" >
                             <a href="#card/add" class="btn btn-primary" ><i class="fa fa-plus"></i> Add</a>
@@ -27,9 +26,10 @@
                             <div class="row">
                                 <div class="form-group ccol-lg-6 col-sm-6 col-xs-12">
                                     <select id="search_by" name="search_by" class="form-control select2" data-placeholder="Search By"  style="width: 100%;">
+                                        <option value="card_number" <?php echo isset($search_by) && $search_by=="card_number" ? 'selected="selected"':'';?> >Card Number</option>
                                         <option value="card_name" <?php echo isset($search_by) && $search_by=="card_name" ? 'selected="selected"':'';?> >Card Name</option>
                                         <option value="card_name_kh" <?php echo isset($search_by) && $search_by=="card_name_kh" ? 'selected="selected"':'';?> >Card Name KH</option>
-                                        <option value="card_code" <?php echo isset($search_by) && $search_by=="card_number" ? 'selected="selected"':'';?> >Card Number</option>
+                                        <option value="phone_number" <?php echo isset($search_by) && $search_by=="phone_number" ? 'selected="selected"':'';?> >Phone Number</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-lg-6 col-sm-6 col-xs-12">
@@ -64,7 +64,7 @@
                         <tr>
                             <th>No</th>
                             <th>Card Name</th>
-                            <th>Card Number</th>
+                            <!--<th>Card Number</th>-->
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -75,7 +75,7 @@
                                 <tr>
                                     <td></td>
                                     <td><?php echo isset($row->card_name)? $row->card_name:"";?></td>
-                                    <td><?php echo isset($row->card_number)? $row->card_number:"";?></td>
+                                    <!--<td><?php //echo isset($row->card_number)? $row->card_number:"";?></td>-->
                                     <td>
                                         <a href="#card/history/<?php echo $row->card_id;?>" data-json='{"card_id":<?php echo $row->card_id;?>}' class="inline-button" data-toggle="tooltip" title="History"> <i class="fa fa-dollar text-blue"></i> </a>
                                         <a href="#card/edit/<?php echo $row->card_id;?>" data-json='{"card_id":<?php echo $row->card_id;?>}' class="inline-button" data-toggle="tooltip" title="Edit"> <i class="fa fa-pencil text-orange"></i> </a>
