@@ -95,29 +95,16 @@
                         </select>
                     </div>
 
-                    <!--
-                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <label for="note">Note</label>
-                        <input type="text" class="form-control" id="note" name="note" placeholder="Enter phone number" value="<?php echo $sale->note; ?>">
-                    </div>
-
-                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <label for="discount_rate">Discount Rate</label>
-                        <input type="text" class="form-control" id="discount_rate" name="discount_rate" placeholder="Enter sale name" value="<?php //echo $sale->discount_rate; ?>">
-                    </div>
-
-                    <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <label for="is_active">&nbsp;</label>
-                        <div>
-                            <label><input type="checkbox" class="minimal form-control" id="manage_stock" name="is_active" <?php //echo $sale->is_active==1?'checked="checked"':"";?> > Active</label>
-                        </div>
-                    </div>
-                    -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-                        <div id="item-search-display"> </div>
-                        <div id="sale-items">
-                            <?php $this->load->view('sale/sale_items', array());?>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div id="item-search-display"> </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div id="sale-items">
+                                    <?php $this->load->view('sale/sale_items', array());?>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

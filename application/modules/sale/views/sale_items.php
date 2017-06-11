@@ -1,3 +1,5 @@
+<label >Selected Items</label>
+
 <table id="sale-items-table"
        class="table table-bordered table-hover data-table"
        data-json='<?php echo isset($sale_items) && is_array($sale_items)? json_encode($sale_items):"";?>'

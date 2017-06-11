@@ -336,4 +336,8 @@ class Item_model extends Model_base
         }
     }
 
+    function format_selling_price(){
+        return "$".number_format($this->selling_price, 2);
+    }
+
 }

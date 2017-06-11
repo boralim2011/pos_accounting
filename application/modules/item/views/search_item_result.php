@@ -13,7 +13,7 @@
                                 <a href="#" data-json='<?php echo json_encode($row);?>' class="btn app-menu-btn btn-flat btn-default btn-choose-item">
                                     <img src="<?php echo $image;?>"/>
                                     <span class="caption"><?php echo isset($row->item_name)? $row->item_name:"";?></span>
-                                    <span class="price"><?php echo isset($row->selling_price)? $row->selling_price:"";?></span>
+                                    <span class="price"><?php echo $row->format_selling_price();?></span>
                                 </a>
                             </li>
                         <?php
