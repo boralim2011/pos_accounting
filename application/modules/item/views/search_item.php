@@ -49,7 +49,7 @@
                 $("#search-items").toggle('show');
             });
 
-            $("#search-items").hide();
+            //$("#search-items").hide();
 
         });
     </script>

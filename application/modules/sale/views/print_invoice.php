@@ -110,9 +110,9 @@
     <!-- Main content -->
     <section class="receipt">
 
-        <h5 class="text-center title">BISS Co., Ltd.</h5>
+        <h5 class="text-center title">Matrix Café</h5>
         <p class="text-center sub-title" >
-            #13Eo, St.15 Borey New World, Sambour Village, Sangkat DoungKor, Khan DoungKor, Phnom Penh <br>
+            New Steung Meanchey Market 2nd Floor, Phnom Penh <br>
             Tel : 092 605 838/071 333 9978
         </p>
 

@@ -12,8 +12,6 @@
 <!-- Main content -->
 <section class="content no-margin-height">
 
-
-
     <!-- Small boxes (Stat box) -->
     <div class="row">
         <div class="col-xs-12">
